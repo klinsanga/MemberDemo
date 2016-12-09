@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/teera-s/AndroidWorkspace/MemberDemo/viewpagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
+        "source": "/Users/teera-s/AndroidWorkspace/MemberDemo/viewpagerIndicator/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/Users/teera-s/AndroidWorkspace/MemberDemo/viewpagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/teera-s/AndroidWorkspace/MemberDemo/viewpagerIndicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml"
+    }
+]
