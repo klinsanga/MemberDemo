@@ -1,0 +1,352 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="th.co.omc.memberdemo.fragment.UplineDiagramFragment">
+
+        <LinearLayout
+            android:id="@+id/mainLayoutDiagram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:background="@drawable/border">
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:text="@string/personal_pv"
+                        android:textSize="14dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/textviewPersonalPV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="9,999.00"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorAccent"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="@string/points"
+                        android:textSize="14dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="60dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/textviewPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/diamond"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfileTop"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_profile"
+                    app:border_width="2dp"
+                    app:border_color="@color/LightGrey"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <th.co.omc.memberdemo.customview.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/downline"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <th.co.omc.memberdemo.customview.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/left"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorAccent"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgLeft"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_profile"
+                            app:border_width="2dp"
+                            app:border_color="@color/LightGrey"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:id="@+id/textviewLeftName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:id="@+id/textviewLeftCode"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:id="@+id/textviewLeftPV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="150.00"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/points"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <th.co.omc.memberdemo.customview.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/downline"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <th.co.omc.memberdemo.customview.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/right"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorAccent"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgRight"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_profile"
+                            app:border_width="2dp"
+                            app:border_color="@color/LightGrey"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:id="@+id/textviewRightName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:id="@+id/textviewRightCode"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:id="@+id/textviewRightPV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="732.00"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+                            <th.co.omc.memberdemo.customview.CustomTextview
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/points"
+                                android:textSize="16dp"
+                                android:textColor="@color/colorPrimary"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/customColor">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/autoship"
+                    android:textSize="26dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#f9e5ca">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/textviewAutoship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center|bottom"
+                    android:text="3,000.00"
+                    android:textSize="24dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/points"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

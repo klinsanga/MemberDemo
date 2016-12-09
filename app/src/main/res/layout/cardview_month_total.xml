@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="horizontal"
+            android:background="#fabb51">
+
+            <th.co.omc.memberdemo.customview.CustomTextview
+                android:id="@+id/total_month_income_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:layout_weight="1"
+                android:text="31 ก.ย. 59"
+                android:textSize="20dp"
+                android:textColor="@color/White"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:paddingLeft="10dp"
+                android:background="@color/table_data_row_even"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="18dp"
+                    android:text="@string/com_menu_unilevel"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/month_unilevel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:textSize="20dp"
+                    android:text="1,0000000.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:paddingLeft="10dp"
+                android:background="@color/BlanchedAlmond"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="18dp"
+                    android:text="@string/com_menu_all_sale"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/month_allsale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:textSize="20dp"
+                    android:text="1,234.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingRight="16dp"
+                android:paddingLeft="10dp"
+                android:background="@color/table_data_row_even"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:text="@string/day_total"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:textSize="24dp"
+                    android:text="200,000.00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ActionBarWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorAccent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <th.co.omc.memberdemo.customview.CustomEdittext
+        android:id="@+id/searchbox"
+        android:background="@drawable/background_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Member shopping"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:padding="8dp"/>
+
+</android.support.v7.widget.Toolbar>

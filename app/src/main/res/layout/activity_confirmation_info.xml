@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_input_method"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="th.co.omc.memberdemo.activity.shopping.InputMethodActivity">
+
+    <LinearLayout
+        android:layout_above="@+id/area_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <th.co.omc.memberdemo.customview.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_information_title_list"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_divider"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_recieve_product"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_information_title_branch"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_order_type"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm_paymetn_gateway"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Demo Demo"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/item_divider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34sp"
+                    android:text="@string/confirm_net_price"
+                    android:id="@+id/customTextview2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_weight="1">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7,500.00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="38dp"
+                    android:id="@+id/customTextview" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="34sp"
+                    android:text="@string/product_baht"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <th.co.omc.memberdemo.customview.CustomTextview
+                android:id="@+id/button_verify_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/edit_info"
+                android:textSize="24dp"
+                android:background="@color/colorAccent"/>
+
+            <th.co.omc.memberdemo.customview.CustomTextview
+                android:id="@+id/button_data_confrim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="@string/apply_info"
+                android:textSize="24dp"
+                android:textColor="@color/White"
+                android:background="#7aa201"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="th.co.omc.memberdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    -->
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.BannerActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".network.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SigninActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NoInternetActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.FilterProductActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ProductDetailActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.CartActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.InputMethodActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ConfirmationInfoActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.billhold.ClarifyActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.signup.SignUpActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.signup.ApplyActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditInformationActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.billhold.ClarifyItemListActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Log in page -->
+        <string name="userID">Username</string>
+        <string name="password">Password</string>
+        <string name="button_login">LOG IN</string>
+        <string name="link_signup">SIGN UP</string>
+        <string name="text_signup">No account yet?</string>
+
+        <!-- Banner page -->
+        <string name="skip_button">Skip</string>
+
+        <!-- Menu -->
+        <string name="menu_home">Home</string>
+        <string name="menu_acc_management">Account management</string> <!-- Header menu -->
+        <string name="menu_member_info">Member information</string>
+        <string name="menu_diagram">Diagram detial</string>
+        <string name="menu_order_product">Order history</string>
+        <string name="menu_clarify">Clarify</string>
+        <string name="menu_ewallet">Ewallet</string>
+        <string name="menu_commission">Commission</string>
+        <string name="menu_system">System</string> <!-- Header menu -->
+        <string name="menu_settings">Settigns</string>
+        <string name="menu_logout">Log out</string>
+
+        <!-- sub menu -->
+        <string name="sub_menu_1">Clarify history</string>
+        <string name="sub_menu_2">Clarify recieve</string>
+
+        <!-- Dashbroad -->
+        <string name="welcome">Welcome</string>
+        <string name="mcode">ID :</string>
+        <string name="buttonName1">Create an account</string>
+        <string name="buttonName2">Shoping</string>
+        <string name="buttonName3">Change Product</string>
+        <string name="buttonName4">Clarify</string>
+
+        <!-- Settings -->
+        <string name="setting_notification_header">Notification setting</string>
+        <string name="setting_notification_news">News notification</string>
+        <string name="setting_notification_promotion">Promotion notification</string>
+        <string name="setting_notification_income">Income notificaiton</string>
+        <string name="setting_notification_toggle_on">On</string>
+        <string name="setting_notification_toggle_off">Off</string>
+        <string name="setting_language_header">Language settign</string>
+        <string name="setting_language_yourlanguage">Your language</string>
+        <string name="setting_language_dialog_header">Select your language</string>
+
+        <!-- Member information -->
+        <string name="info_name">Name :</string>
+        <string name="info_id">Member ID :</string>
+        <string name="info_date_register">Register date :</string>
+        <string name="info_birth_date">Birth date :</string>
+        <string name="info_gender">Gender :</string>
+        <string name="info_mobile_number">Mobile :</string>
+        <string name="info_email">Email :</string>
+        <string name="info_recommend">Sponsors</string>
+        <string name="info_upline">Upline</string>
+        <string name="info_edit_button">Edit profile</string>
+
+        <!-- Diagram tab name -->
+        <string name="diagram_tab1">Upline</string>
+        <string name="diagram_tab2">Sponsors</string>
+        <string name="diagram_tab3">Reports</string>
+
+        <!-- Commission tab name -->
+        <string name="com_tab1">Day</string>
+        <string name="com_tab2">Week</string>
+        <string name="com_tab3">Month</string>
+
+        <!-- Ewallet tab name -->
+        <string name="tab_topup">Topup history</string>
+        <string name="tab_report">Report in/out</string>
+
+        <!-- Clarify tab name -->
+        <string name="clarify">Clarify</string>
+        <string name="clarify_history">History</string>
+        <string name="clarify_recieve">Recieve</string>
+
+        <!-- Order tab name -->
+        <string name="order_history">History</string>
+        <string name="order_to_member">Another member</string>
+
+        <!-- Shop tab name -->
+        <string name="shop_product">Product</string>
+        <string name="shop_promotion">Promotion</string>
+        <string name="shop_sort">Sort by</string>
+        <string name="shop_filter">Filter</string>
+        
+        <!-- general content -->
+        <string name="personal_pv">Personal PV</string>
+        <string name="points">Points</string>
+        <string name="downline">Downline</string>
+        <string name="left">Left</string>
+        <string name="right">Right</string>
+        <string name="autoship">Autoship</string>
+
+        <!-- Position name -->
+        <string name="no_member">No member</string>
+        <string name="member">Member</string>
+        <string name="silver">Silver</string>
+        <string name="gold">Gold</string>
+        <string name="diamond">Diamond</string>
+        <string name="double_diamond">Double diamond</string>
+        <string name="super_diamond">Super diamond</string>
+        <string name="proud_diamond">Proud diamond</string>
+        <string name="termianted">Terminated</string>
+
+        <!-- Sponsors report prefix -->
+        <string name="prefix_id">ID : </string>
+        <string name="prefix_name">Name : </string>
+        <string name="prefix_date_register">Issue date : </string>
+        <string name="prefix_position">Position : </string>
+        <string name="prefix_position_honor">Honor : </string>
+        <string name="prefix_pv">PV : </string>
+        <string name="prefix_sponsors_id">Sponsors ID : </string>
+        <string name="prefix_sponsors_name">Sponsors Name : </string>
+        <string name="prefix_sponsors_level">Sponsors Level : </string>
+
+        <string name="prefix_ewallet">Ewallet : </string>
+        <string name="prefix_date">Date</string>
+
+        <!-- Side -->
+        <string name="left_side">Left</string>
+        <string name="right_side">Right</string>
+        
+        <!-- Commission Menu -->
+        <string name="com_menu_fast">Faststart</string>
+        <string name="com_menu_ws">Weak/Strong</string>
+        <string name="com_menu_matching">Matching</string>
+        <string name="com_menu_keyBonus">Key bonus</string>
+        <string name="com_menu_incom_total">Income Total</string>
+
+        <string name="com_menu_all_sale">All sale</string>
+        <string name="com_menu_unilevel">Uni-level</string>
+        <string name="com_menu_month_total">Total income</string>
+
+        <!-- Button -->
+        <string name="back_button">Back</string>
+
+        <!-- Faststart Table -->
+        <string name="fast_table_header1">Date</string>
+        <string name="fast_table_header2">Member ID</string>
+        <string name="fast_table_header3">Name</string>
+        <string name="fast_table_header4">Bonus</string>
+
+        <!-- Month -->
+        <string name="january">January</string>
+        <string name="febuary">Febuary</string>
+        <string name="march">March</string>
+        <string name="april">April</string>
+        <string name="may">May</string>
+        <string name="june">June</string>
+        <string name="july">July</string>
+        <string name="august">August</string>
+        <string name="september">September</string>
+        <string name="october">October</string>
+        <string name="november">November</string>
+        <string name="december">December</string>
+
+        <!-- weak/strong -->
+        <string name="old_left">Old left</string>
+        <string name="old_right">Old right</string>
+        <string name="income_left">Income left</string>
+        <string name="income_right">Income right</string>
+        <string name="total_left">Total left</string>
+        <string name="total_right">Total right</string>
+        <string name="balance_left">Balance left</string>
+        <string name="balance_right">Balance right</string>
+        <string name="balance">Balance</string>
+        <string name="bonus">Bonus</string>
+
+        <!-- day total -->
+        <string name="day_faststart">Faststart</string>
+        <string name="day_weakstrong">Weak/Strong</string>
+        <string name="day_matching">Matching</string>
+        <string name="day_keybonus">Key Bonus</string>
+        <string name="day_total">Total</string>
+        <string name="day_autoship">Autoship</string>
+        <string name="day_ecom">Ecom</string>
+
+        <!-- rounds -->
+        <string name="round">Round</string>
+        <string name="pv_balance">Pv balance</string>
+        <string name="ecom_withdraw">Ecom withdraw</string>
+        <string name="ewallet_withdraw">Ewallet withdraw</string>
+        <string name="balance_total">Balance</string>
+        <string name="forward_bonus">Forward bonus</string>
+        <string name="year_bonus">Year bonus</string>
+        <string name="tax">Tax</string>
+        <string name="less_tranfer">Less tranfer</string>
+        <string name="summary_tranfer">Summary tranfer</string>
+        <string name="tranfer_date">Tranfer date</string>
+
+        <!-- ewallet topup -->
+        <string name="topup_number">Bill No.</string>
+        <string name="topup_total">Total</string>
+        <string name="topup_cash">Cash</string>
+        <string name="topup_tranfer">Tranfer</string>
+        <string name="topup_credit">Credit</string>
+        <string name="topup_by">By</string>
+        <string name="topup_chanel">Chanel</string>
+
+        <!-- ewallet report -->
+        <string name="ewallet_report_note">Note</string>
+        <string name="ewallet_report_in">In</string>
+        <string name="ewallet_report_out">Out</string>
+        <string name="ewallet_report_balance">Balance</string>
+
+        <!-- clarify -->
+        <string name="clarify_buydate">Buy date</string>
+        <string name="clarify_lastdate">Last date</string>
+        <string name="clarify_price">Price balance</string>
+        <string name="clarify_pv">Pv balance</string>
+        <string name="clarify_balance">Balance</string>
+
+        <!-- clarify hold -->
+        <string name="clarify_hold_number">Hold</string>
+        <string name="clarify_hold_bill_number">No</string>
+        <string name="clarify_hold_type">Type</string>
+        <string name="clarify_hold_buy_date">Buy date</string>
+        <string name="clarify_hold_pv">Pv balance</string>
+        <string name="clarify_hold_price">Price balance</string>
+
+        <!-- clarify recieve -->
+        <string name="clarify_recieve_number">Hold</string>
+        <string name="clarify_recieve_bill_number">No</string>
+        <string name="clarify_recieve_id">ID</string>
+        <string name="clarify_recieve_name">Name</string>
+        <string name="clarify_recieve_save">By</string>
+        <string name="clarify_recieve_type">Type</string>
+        <string name="clarify_recieve_buy_date">Buy date</string>
+        <string name="clarify_recieve_pv">Pv balance</string>
+        <string name="clarify_recieve_price">Price balance</string>
+
+        <!-- order history -->
+        <string name="order_pv">PV</string>
+        <string name="order_price">Amount</string>
+        <string name="order_by">By</string>
+        <string name="order_remark">Remark</string>
+        <string name="order_branch">Branch</string>
+
+        <!-- Button filter -->
+        <string name="button_filter">APPLY</string>
+        <string name="filter_title">Filter</string>
+
+        <!-- Filter -->
+        <string name="choose_price">choose your price range</string>
+        <string name="choose_pv">choose your pv range</string>
+
+        <!-- Product page -->
+        <string name="product_title">Shopping</string>
+        <string name="product_code">Code</string>
+        <string name="product_price">Price</string>
+        <string name="product_pv">PV</string>
+        <string name="product_baht">Baht</string>
+        <string name="product_filter">Search by name or code.</string>
+        <string name="product_filter_dialog_button">OK</string>
+
+        <string name="product_page_cart_title">Shopping cart</string>
+        <string name="product_page_cart_detial">Description</string>
+        <string name="product_page_cart_totalpoint">Total point</string>
+        <string name="product_page_cart_point">Point</string>
+        <string name="product_page_cart_item">Item</string>
+        <string name="product_page_cart_total">Total</string>
+        <string name="product_page_cart_button_previous">Shopping</string>
+        <string name="product_page_cart_button_next">Next</string>
+
+        <string name="product_page_detail_title">Product description</string>
+        <string name="product_detial_buynow">Buy now</string>
+        <string name="product_detial_available">Available</string>
+        <string name="product_detial_soldout">Sold out</string>
+
+        <!-- Form -->
+        <string name="form_empty">Please input information.</string>
+        <string name="form_spinner_not_select">Please select one item.</string>
+        <string name="form_order_type">Order type</string>
+        <string name="form_member_id">Member id</string>
+        <string name="form_member_name">Member name</string>
+        <string name="form_recieve_product">Recieve product</string>
+        <string name="form_radio_send_product">Send</string>
+        <string name="form_radio_self_recieve">Self recieve</string>
+        <string name="form_radio_send_as_register_address">Send to address as register</string>
+
+        <string name="form_imformation_title">Information</string>
+
+        <string name="form_send_product_recieve_name">Name</string>
+        <string name="form_send_product_mobile">Mobile</string>
+        <string name="form_send_product_address">Address</string>
+        <string name="form_send_product_zip">Zip</string>
+        <string name="form_send_product_note">Note</string>
+
+        <string name="building">Building</string>
+        <string name="street">Street</string>
+        <string name="village">Village</string>
+        <string name="soi">Soi</string>
+        
+        <string name="verify">Verify</string>
+        <string name="ok">OK</string>
+
+        <string name="confirm_information_title_list">Product list</string>
+        <string name="confirm_information_title_branch">Branch</string>
+        <string name="confirm_information_title">Information apply</string>
+        <string name="confirm_order_type">Bill type</string>
+        <string name="confirm_paymetn_gateway">Payment gateway</string>
+        <string name="confirm_net_price">Net price</string>
+
+        <string name="edit_info">Edit</string>
+        <string name="apply_info">Apply</string>
+
+        <string name="spinner_order_type">Please select bill type</string>
+        <string name="spinner_payment">Please select payment</string>
+        <string name="spinner_province">Please select province</string>
+        <string name="spinner_district">Please select district</string>
+        <string name="spinner_sub_district">Please select sub-district</string>
+        <string name="spinner_branch">Please select branch</string>
+        <string name="spinner_date">Date</string>
+        <string name="spinner_month">Month</string>
+        <string name="spinner_year">Year</string>
+        <string name="spinner_nationality">Please select nationality</string>
+
+        <string name="clarify_title">Clarify</string>
+        <string name="clarify_button_left">Order list</string>
+        <string name="clarify_button_right">Next</string>
+        
+        <string name="signup_first_page">Terms and Conditions</string>
+        <string name="signup_second_page">Input</string>
+        <string name="signup_thrid_page">Apply</string>
+        <string name="signup_button_decline">Decline</string>
+        <string name="signup_button_accept">Accept</string>
+
+        <string name="signup_input_hint_sponsor_id">Sponsors id</string>
+        <string name="signup_input_hint_sponsor_name">Sponsors name</string>
+        <string name="signup_input_hint_upline_id">Upline id</string>
+        <string name="signup_input_hint_upline_name">Upline name</string>
+
+        <string name="signup_button_save">Save</string>
+        <string name="signup_button_clear">Cear</string>
+        
+        <string name="signup_input_hint_register_name">Name</string>
+        <string name="signup_input_hint_register_gender_male">Male</string>
+        <string name="signup_input_hint_register_gender_female">Female</string>
+        <string name="signup_input_hint_register_nationality">Nationality</string>
+        <string name="signup_input_hint_register_id">Identification or passport</string>
+        <string name="signup_input_hint_register_mobile">Mobile</string>
+        <string name="signup_input_hint_register_email">Email</string>
+        <string name="signup_input_hint_register_address">Address</string>
+        <string name="signup_input_hint_register_zip">Zip</string>
+
+        <string name="signup_input_title1">Sponsors</string>
+        <string name="signup_input_title2">Upline</string>
+        <string name="signup_input_title3">Register</string>
+        <string name="signup_input_title4">Address</string>
+
+        <string name="prefix">Prefix</string>
+        <string name="prefix_name_male">Mr.</string>
+        <string name="prefix_name_female_single">Ms.</string>
+        <string name="prefix_name_female_married">Mrs.</string>
+        <string name="prefix_name_other">Other</string>
+
+        <string name="sponsors_id_empty">Please enter sponsors id</string>
+        <string name="side_empty">Please select at least one side</string>
+
+        <string name="update_information_title1">Upload profile image</string>
+        <string name="update_information_title2">Contact</string>
+        <string name="update_information_title3">Address</string>
+        <string name="update_information_choose_option_upload_image">Upload profile image option</string>
+        <string name="update_information_dialog_option_question">How do you want to set your picture?</string>
+        <string name="update_information_option_gallery">Gallery</string>
+        <string name="update_information_option_camera">Camera</string>
+
+        <string name="province">Province</string>
+        <string name="district">District</string>
+        <string name="sub_district">Sub District</string>
+
+        <string name="search_member_id">Search</string>
+        <string name="choose_bill">Select bill</string>
+
+        <string name="eula_string">COPYRIGHTS:
+
+\nCopyright 2016 co.th.omc.Member All Rights Reserved.
+
+\n\nThis software may not, in whole or in any part, be copied, reproduced, transmitted, translated (into any
+language, natural or computer), stored in a retrieval system, reduced to any electronic medium or machine readable
+format, or by any other form or means without prior consent, in writing, from co.th.omc.Member.
+
+\n\nYou are granted a limited license to use this software. The software may be used or copied only in accordance
+with the terms of that license, which is described in the following paragraphs.
+
+\n\nTRADEMARKS:
+\n\n[Software logos, icons, etc that are Trademarked]
+
+\n\nLICENSE:
+\n\n\"THE SOFTWARE\" shall be taken to mean the software contained in this app and any subsequent versions
+or upgrades received as a result of having purchased this app. \"BUYER\" shall be taken as the original
+purchaser of the software.
+
+\n\nBuyer has the non-exclusive right to the use of software only on a single device. Buyer may not electronically
+transfer the program from one device to another over any type of network. Buyer may not distribute copies
+of the software or the accompanying documentation to others either for a fee or without charge. Buyer may not modify
+or translate the program or documentation. User may not disassemble the program or allow it to be disassembled
+into its constituent source code. Buyer\'s use of the software indicates his/her acceptance of these terms
+and conditions. If buyer does not agree to these conditions, return the distribution media, documentation, and
+associated materials to the vendor from whom the software was purchased, and/or uninstall the software from the device,
+and erase the software from any and all storage devices upon which it may have been installed.
+
+\n\nThis license agreement shall be governed by the laws of The United States of America, Massachusetts and
+shall inure to the benefit of co.th.omc.Member or its assigns.
+
+\n\nDISCLAIMER / LIMITATION OF LIABILITY:
+\n\nBuyer acknowledges that the software may not be free from defects and may not satisfy all of buyer\'s
+needs. co.th.omc.Member warrants all media on which the software is distributed for 60 days to be free from defects
+in normal use. The software and any accompanying written materials are licensed \"AS IS\". Buyer\'s exclusive
+remedy during the warranty period (if any) shall consist of replacement of distribution media if determined to be
+faulty. In no event will co.th.omc.Member be liable for direct, indirect, incidental or consequential damage or
+damages resulting from loss of use, or loss of anticipated profits resulting from any defect in the software,
+even if it has been advised of the possibility of such damage. Some laws do not allow exclusion or limitation
+of implied warranties or liabilities for incidental or consequential damages, so the above limitations or
+exclusion may not apply.
+
+\n\nSPECIFIC RESTRICTIONS:
+\n\nIn accordance with the COMPUTER SOFTWARE RENTAL ACT OF 1990, this software may not be rented, lent or leased.
+\n\nThe software and accompanying documentation may not be provided by a \"Backup Service\" or any other vendor
+which does not provide an original package as composed of co.th.omc.Member, including but not limited to all original
+distribution media, documentation, registration cards, and insertions.</string>
+
+</resources>
+

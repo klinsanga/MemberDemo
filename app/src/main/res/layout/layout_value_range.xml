@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <th.co.omc.memberdemo.customview.CustomTextview
+            android:id="@+id/price_value_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="min"
+            android:textSize="20dp"/>
+
+        <th.co.omc.memberdemo.customview.CustomTextview
+            android:id="@+id/price_value_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="max"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/seekbar_placeholder"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

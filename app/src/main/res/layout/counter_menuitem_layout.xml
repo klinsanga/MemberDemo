@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_shopping_cart_white">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/counterValuePanel"
+        android:layout_width="20dp"
+        android:layout_height="20dp" >
+
+        <!-- Menu Item Image -->
+        <ImageView
+            android:id="@+id/counterBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/badge_cart_item" />
+
+        <!-- Badge Count -->
+        <th.co.omc.memberdemo.customview.CustomTextview
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

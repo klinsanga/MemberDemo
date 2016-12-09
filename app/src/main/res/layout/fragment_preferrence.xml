@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="th.co.omc.memberdemo.fragment.PreferrenceFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/headerNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:text="@string/setting_notification_header"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@drawable/ic_notifications_white_36dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/txtNewsNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:layout_weight="4"
+                    android:text="@string/setting_notification_news"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"/>
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/SWnewsnotification"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/txtPromotionNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:layout_weight="4"
+                    android:text="@string/setting_notification_promotion"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"/>
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/SWpromotionnotification"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/txtIncomeNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:layout_weight="4"
+                    android:text="@string/setting_notification_income"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"/>
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/SWincomenotification"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/headerLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:text="@string/setting_language_header"
+                    android:drawableLeft="@drawable/ic_language_white_36dp"
+                    android:drawablePadding="4dp"
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/changeLanguageLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/txtLanguage"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="16dp"
+                    android:layout_weight="2"
+                    android:text="@string/setting_language_yourlanguage"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/txtLanguageResult"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:gravity="center|right"
+                    android:paddingRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Your language"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

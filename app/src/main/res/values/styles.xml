@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorControlNormal">@color/White</item>
+
+        <item name="android:titleTextStyle">@color/White</item>
+    </style>
+
+    <style name="ErroAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_error</item>
+        <item name="colorPrimaryDark">@color/color_error</item>
+        <item name="colorAccent">@color/color_error</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/White</item>
+        <item name="android:textColorPrimary">@color/WhiteSmoke</item>
+        <item name="android:background">@color/omc_logo</item>
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="MyTheme" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="CustomTabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Action bar -->
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="radionbutton"
+        parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radiobutton_drawable</item>
+    </style>
+
+</resources>

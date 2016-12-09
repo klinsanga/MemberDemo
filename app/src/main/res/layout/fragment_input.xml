@@ -1,0 +1,831 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="th.co.omc.memberdemo.fragment.signup.InputFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/area_footer"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <cn.bit.szw.widget.StepView
+            android:id="@+id/stepview2"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_input_title1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp"
+                    android:orientation="horizontal">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/sponsors_id"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_sponsor_id" />
+
+                    <ImageView
+                        android:id="@+id/btn_search_sponsors_id"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.8"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_search_white_18dp"
+                        android:background="@color/colorAccent"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/sponsors_name"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_sponsor_name" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_input_title2"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp"
+                    android:orientation="horizontal">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/upline_id"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_upline_id" />
+
+                    <ImageView
+                        android:id="@+id/btn_search_upline_id"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.8"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_search_white_18dp"
+                        android:background="@color/DodgerBlue"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/upline_name"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_upline_name" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                        <RadioButton
+                            android:id="@+id/radio_left"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/left"
+                            android:gravity="center"
+                            android:paddingRight="60dp"
+                            style="@style/radionbutton"/>
+
+                        <RadioButton
+                            android:id="@+id/radio_right"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="60dp"
+                            style="@style/radionbutton"
+                            android:text="@string/right"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/forErrorSide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_input_title3"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <Spinner
+                        android:id="@+id/prefix_name"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:drawSelectorOnTop="true"
+                        android:prompt="@string/form_order_type"
+                        android:padding="4dp"
+                        android:inputType="text"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/textviewForError1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/register_name"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_register_name" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="60dp"
+                            android:text="@string/signup_input_hint_register_gender_male"
+                            style="@style/radionbutton"/>
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingRight="60dp"
+                            style="@style/radionbutton"
+                            android:text="@string/signup_input_hint_register_gender_female"/>
+
+                    </RadioGroup>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/forErrorGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:id="@+id/spinnerBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_edittext_with_border"
+                        android:padding="1dp">
+
+                        <Spinner
+                            android:id="@+id/register_birthdate"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:drawSelectorOnTop="true"
+                            android:prompt="@string/form_order_type"
+                            android:padding="4dp"
+                            android:inputType="text"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="35dp">
+
+                            <TextView
+                                android:id="@+id/dateError"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_edittext_with_border"
+                        android:padding="1dp">
+
+                        <Spinner
+                            android:id="@+id/register_birthmonth"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:drawSelectorOnTop="true"
+                            android:prompt="@string/form_order_type"
+                            android:padding="4dp"
+                            android:inputType="text"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="35dp">
+
+                            <TextView
+                                android:id="@+id/monthError"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_edittext_with_border"
+                        android:padding="1dp">
+
+                        <Spinner
+                            android:id="@+id/register_birthyear"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="4"
+                            android:layout_gravity="center"
+                            android:drawSelectorOnTop="true"
+                            android:prompt="@string/form_order_type"
+                            android:padding="4dp"
+                            android:inputType="text"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="35dp">
+
+                            <TextView
+                                android:id="@+id/yearError"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <Spinner
+                        android:id="@+id/register_nationality"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:drawSelectorOnTop="true"
+                        android:prompt="@string/form_order_type"
+                        android:padding="4dp"
+                        android:inputType="text"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/nationalityError"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/register_id"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="phone"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_register_id" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/register_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="phone"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_register_mobile" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/register_email"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_register_email" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signup_input_title4"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/register_address"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_register_address" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <Spinner
+                        android:id="@+id/register_province"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:inputType="text"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/textviewForErrorProvince"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <Spinner
+                        android:id="@+id/register_amphor"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:inputType="text" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/textviewForErrorDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <Spinner
+                        android:id="@+id/register_district"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:inputType="text"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            android:id="@+id/textviewForErrorSubDistrict"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_drop_down_black_18dp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext_with_border"
+                    android:padding="1dp">
+
+                    <th.co.omc.memberdemo.customview.CustomEdittext
+                        android:id="@+id/register_zip"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="4"
+                        android:layout_gravity="center"
+                        android:padding="4dp"
+                        android:background="@drawable/input_edittext"
+                        android:textSize="20sp"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:hint="@string/signup_input_hint_register_zip" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/checkbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/button_decline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="@string/signup_button_clear"
+                    android:textSize="24dp"
+                    android:background="@color/colorAccent"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/button_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="@string/signup_button_save"
+                    android:textSize="24dp"
+                    android:textColor="@color/White"
+                    android:background="#7aa201"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

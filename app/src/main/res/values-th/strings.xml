@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Log in page -->
+        <string name="userID">ชื่อผู้ใช้</string>
+        <string name="password">รหัสผ่าน</string>
+        <string name="button_login">เข้าสู่ระบบ</string>
+        <string name="link_signup">ลงทะเบียน</string>
+        <string name="text_signup">ยังไม่มีบัญชีผู้ใช้?</string>
+
+        <!-- Banner page -->
+        <string name="skip_button">ข้าม</string>
+
+        <!-- Menu -->
+        <string name="menu_home">หน้าแรก</string>
+        <string name="menu_acc_management">การจัดการบัญชี</string> <!-- Header menu -->
+        <string name="menu_member_info">ข้อมูลสมาชิก</string>
+        <string name="menu_diagram">ข้อมูลแผนผังทีมงาน</string>
+        <string name="menu_order_product">ข้อมูลการซื้อขาย</string>
+        <string name="menu_clarify">แจงยอด</string>
+        <string name="menu_ewallet">กระเป๋าเงิน</string>
+        <string name="menu_commission">คอมมิชชั่น</string>
+        <string name="menu_system">ระบบ</string> <!-- Header menu -->
+        <string name="menu_settings">ตั้งค่า</string>
+        <string name="menu_logout">ออกจากระบบ</string>
+
+        <!-- Dashbroad -->
+        <string name="welcome">ยินดีต้อนรับ</string>
+        <string name="mcode">รหัส :</string>
+        <string name="buttonName1">สมัครสมาชิก</string>
+        <string name="buttonName2">สั่งซื้อสินค้า</string>
+        <string name="buttonName3">แลกสินค้า</string>
+        <string name="buttonName4">แจงยอด</string>
+
+        <!-- Settings -->
+        <string name="setting_notification_header">ตั้งค่าการแจ้งเตือน</string>
+        <string name="setting_notification_news">การแจ้งเตือนข่าว</string>
+        <string name="setting_notification_promotion">การแจ้งเตือนโปรโมชั่น</string>
+        <string name="setting_notification_income">การแจ้งเตือนรายรับ</string>
+        <string name="setting_notification_toggle_on">เปิด</string>
+        <string name="setting_notification_toggle_off">ปิด</string>
+        <string name="setting_language_header">เลือกภาษา</string>
+        <string name="setting_language_yourlanguage">ภาษาที่เลือก</string>
+        <string name="setting_language_dialog_header">เลือกภาษา</string>
+
+        <!-- Member information -->
+        <string name="info_name">ชื่อ :</string>
+        <string name="info_id">รหัสสมาชิก :</string>
+        <string name="info_date_register">วันที่สมัคร :</string>
+        <string name="info_birth_date">วันเดือนปีเกิด :</string>
+        <string name="info_gender">เพศ :</string>
+        <string name="info_mobile_number">มือถือ :</string>
+        <string name="info_email">อีเมล :</string>
+        <string name="info_recommend">ผู้แนะนำ</string>
+        <string name="info_upline">อัพไลน์</string>
+        <string name="info_edit_button">แก้ไขข้อมูลส่วนตัว</string>
+
+        <!-- Diagram tab name -->
+        <string name="diagram_tab1">ผังอัพไลน์</string>
+        <string name="diagram_tab2">รายงานผู้แนะนำ</string>
+        <string name="diagram_tab3">รายงานอัพไลน์</string>
+
+        <!-- Commission tab name -->
+        <string name="com_tab1">รายวัน</string>
+        <string name="com_tab2">รายรอบ</string>
+        <string name="com_tab3">รายเดือน</string>
+
+        <!-- Ewallet tab name -->
+        <string name="tab_topup">ประวัติเติมเงิน</string>
+        <string name="tab_report">รายงานเข้า-ออก</string>
+
+        <!-- Clarify tab name -->
+        <string name="clarify">แจงยอด</string>
+        <string name="clarify_history">ประวัติ</string>
+        <string name="clarify_recieve">รับแจง</string>
+
+        <!-- Order tab name -->
+        <string name="order_history">ประวัติการสั่งซื้อ</string>
+        <string name="order_to_member">การสั่งซื้อให้สมาชิกอื่น</string>
+
+        <!-- Shop tab name -->
+        <string name="shop_product">สินค้า</string>
+        <string name="shop_promotion">โปรโมชั่น</string>
+        <string name="shop_sort">จัดเรียง</string>
+        <string name="shop_filter">ตัวกรอง</string>
+
+        <!-- general content -->
+        <string name="personal_pv">พีวีสะสมส่วนตัว</string>
+        <string name="points">พ้อยท์</string>
+        <string name="downline">ดาวน์ไลน์</string>
+        <string name="left">ซ้าย</string>
+        <string name="right">ขวา</string>
+        <string name="autoship">ออโต้ชิพ</string>
+
+        <!-- Position name -->
+        <string name="no_member">ไม่มีสมาชิก</string>
+        <string name="member">สมาชิก</string>
+        <string name="silver">ซิลเวอร์</string>
+        <string name="gold">โกลด์</string>
+        <string name="diamond">ไดมอน</string>
+        <string name="double_diamond">ดับเบิ้ล ไดมอน</string>
+        <string name="super_diamond">ซุปเปอร์ ไดมอน</string>
+        <string name="proud_diamond">พราวด์ ไดมอน</string>
+        <string name="termianted">ระงับการใช้งาน</string>
+
+        <!-- Sponsors report prefix -->
+        <string name="prefix_id">รหัส : </string>
+        <string name="prefix_name">ชื่อ : </string>
+        <string name="prefix_date_register">วันสมัคร : </string>
+        <string name="prefix_position">ตำแหน่ง : </string>
+        <string name="prefix_position_honor">ตำแหน่งเกียรติ : </string>
+        <string name="prefix_pv">พีวี : </string>
+        <string name="prefix_sponsors_id">รหัสผู้แนะนำ : </string>
+        <string name="prefix_sponsors_name">ชื่อผู้แนะนำ : </string>
+        <string name="prefix_sponsors_level">ชั้นSponsors : </string>
+
+        <string name="prefix_ewallet">Ewallet : </string>
+        <string name="prefix_date">วันที่</string>
+
+        <!-- Side -->
+        <string name="left_side">ซ้าย</string>
+        <string name="right_side">ขวา</string>
+
+        <!-- Commission Menu -->
+        <string name="com_menu_fast">ค่าแนะนำ (Fast)</string>
+        <string name="com_menu_ws">อ่อน/แข็ง</string>
+        <string name="com_menu_matching">Matching</string>
+        <string name="com_menu_keyBonus">Key bonus</string>
+        <string name="com_menu_incom_total">รวมรายได้รายวัน</string>
+
+        <string name="com_menu_all_sale">All sale</string>
+        <string name="com_menu_unilevel">Uni-level</string>
+        <string name="com_menu_month_total">รายได้รวมรายเดือน</string>
+
+        <!-- Button -->
+        <string name="back_button">กลับ</string>
+
+        <!-- Faststart Table -->
+        <string name="fast_table_header1">วันที่</string>
+        <string name="fast_table_header2">รหัสสมาชิก</string>
+        <string name="fast_table_header3">ชื่อ</string>
+        <string name="fast_table_header4">โบนัส</string>
+
+        <!-- Month -->
+        <string name="january">มกราคม</string>
+        <string name="febuary">กุมภาพันธ์</string>
+        <string name="march">มีนาคม</string>
+        <string name="april">เมษายน</string>
+        <string name="may">พฤษภาคม</string>
+        <string name="june">มิถุนายน</string>
+        <string name="july">กรกฎาคม</string>
+        <string name="august">สิงหาคม</string>
+        <string name="september">กันยายน</string>
+        <string name="october">ตุลาคม</string>
+        <string name="november">พฤศจิกายน</string>
+        <string name="december">ธันวาคม</string>
+
+        <!-- weak/strong -->
+        <string name="old_left">ซ้ายเก่า</string>
+        <string name="old_right">ขวาเก่า</string>
+        <string name="income_left">เข้าซ้าย</string>
+        <string name="income_right">เข้าขวา</string>
+        <string name="total_left">รวมซ้าย</string>
+        <string name="total_right">รวมขวา</string>
+        <string name="balance_left">เหลือซ้าย</string>
+        <string name="balance_right">เหลือขวา</string>
+        <string name="balance">เหลือ</string>
+        <string name="bonus">โบนัส</string>
+
+        <!-- day total -->
+        <string name="day_faststart">ค่าแนะนำ (Fast)</string>
+        <string name="day_weakstrong">อ่อน/แข็ง</string>
+        <string name="day_matching">Matching</string>
+        <string name="day_keybonus">Key Bonus</string>
+        <string name="day_total">รวม</string>
+        <string name="day_autoship">Autoship</string>
+        <string name="day_ecom">Ecom</string>
+
+        <!-- rounds -->
+        <string name="round">รอบที่</string>
+        <string name="pv_balance">ยอดยกมา</string>
+        <string name="ecom_withdraw">ถอนEcom</string>
+        <string name="ewallet_withdraw">ถอนEwallet</string>
+        <string name="balance_total">โบนัสรวม+ยอดยกมา</string>
+        <string name="forward_bonus">โบนัสยกไป</string>
+        <string name="year_bonus">โบนัสสะสมทั้งปี</string>
+        <string name="tax">หักภาษี</string>
+        <string name="less_tranfer">หักค่าโอน</string>
+        <string name="summary_tranfer">สรุปยอดโอย</string>
+        <string name="tranfer_date">วันที่โอน</string>
+
+        <!-- ewallet topup -->
+        <string name="topup_number">เลขที่บิล</string>
+        <string name="topup_total">จำนวนเงินรวม</string>
+        <string name="topup_cash">เงินสด</string>
+        <string name="topup_tranfer">เงินโอน</string>
+        <string name="topup_credit">บัตรเครดิต</string>
+        <string name="topup_by">ผู้คีย์</string>
+        <string name="topup_chanel">ช่องทาง</string>
+
+        <!-- ewallet report -->
+        <string name="ewallet_report_note">หมายเหตุ</string>
+        <string name="ewallet_report_in">รายงานเข้า</string>
+        <string name="ewallet_report_out">รายงานออก</string>
+        <string name="ewallet_report_balance">คงเหลือ</string>
+
+        <!-- clarify -->
+        <string name="clarify_buydate">วันที่ซื้อ</string>
+        <string name="clarify_lastdate">วันสุดท้ายที่แจง</string>
+        <string name="clarify_price">ราคาคงเหลือ</string>
+        <string name="clarify_pv">พีวีคงเหลือ</string>
+        <string name="clarify_balance">จำนวนคงเหลือ</string>
+
+        <!-- clarify hold -->
+        <string name="clarify_hold_number">Hold</string>
+        <string name="clarify_hold_bill_number">บิลที่</string>
+        <string name="clarify_hold_type">ชนิดบิล</string>
+        <string name="clarify_hold_buy_date">วันที่ซื้อ</string>
+        <string name="clarify_hold_pv">จำนวนพีวีรวม</string>
+        <string name="clarify_hold_price">จำนวนเงินรวม</string>
+
+        <!-- clarify recieve -->
+        <string name="clarify_recieve_number">Hold</string>
+        <string name="clarify_recieve_bill_number">บิลที่</string>
+        <string name="clarify_recieve_id">รหัสผู้ซื้อ</string>
+        <string name="clarify_recieve_name">ชื่อผู้ซื้อ</string>
+        <string name="clarify_recieve_save">ผู้บันทึก</string>
+        <string name="clarify_recieve_type">ชนิดบิล</string>
+        <string name="clarify_recieve_buy_date">วันที่ซื้อ</string>
+        <string name="clarify_recieve_pv">จำนวนพีวีรวม</string>
+        <string name="clarify_recieve_price">จำนวนเงินรวม</string>
+
+        <!-- order history -->
+        <string name="order_pv">พีวี</string>
+        <string name="order_price">จำนวนเงิน</string>
+        <string name="order_by">ผู้คีย์</string>
+        <string name="order_remark">อ้างอิง</string>
+        <string name="order_branch">สาขา</string>
+
+        <!-- Button filter -->
+        <string name="button_filter">เรียบร้อย</string>
+        <string name="filter_title">ตัวกรอง</string>
+
+        <!-- Filter -->
+        <string name="choose_price">เลือกขอบเขตของราคา</string>
+        <string name="choose_pv">เลือกขอบเขตของพีวี</string>
+        
+        <!-- Product page -->
+        <string name="product_title">สั่งซื้อสินค้า</string>
+        <string name="product_code">รหัส</string>
+        <string name="product_price">ราคา</string>
+        <string name="product_pv">พีวี</string>
+        <string name="product_baht">บาท</string>
+        <string name="product_filter">ค้นหาจากชื่อหรือรหัสสินค้า</string>
+        <string name="product_filter_dialog_button">ตกลง</string>
+
+        <string name="product_page_cart_title">ตะกร้าสินค้า</string>
+        <string name="product_page_cart_detial">รายละเอียด</string>
+        <string name="product_page_cart_totalpoint">คะแนนรวม</string>
+        <string name="product_page_cart_point">คะแนน</string>
+        <string name="product_page_cart_item">รายการ</string>
+        <string name="product_page_cart_total">รวม</string>
+        <string name="product_page_cart_button_previous">สั่งสินค้าเพิ่ม</string>
+        <string name="product_page_cart_button_next">ดำเนินการต่อ</string>
+
+        <string name="product_page_detail_title">รายละเอียดสินค้า</string>
+        <string name="product_detial_available">มีสินค้า</string>
+        <string name="product_detial_soldout">สินค้าหมด</string>
+        <string name="product_detial_buynow">ซื้อตอนนี้</string>
+
+        <!-- Form error -->
+        <string name="form_empty">กรุณาใส่ข้อมูล</string>
+        <string name="form_spinner_not_select">กรุณาเลือกหนึ่งรายการ</string>
+        <string name="form_order_type">ประเภทการสั่งซื้อ</string>
+        <string name="form_member_id">รหัสสมาชิก</string>
+        <string name="form_member_name">ชื่อสมาชิก</string>
+        <string name="form_recieve_product">การรับสินค้า</string>
+        <string name="form_radio_send_product">จัดส่ง</string>
+        <string name="form_radio_self_recieve">รับของด้วยตัวเอง</string>
+        <string name="form_radio_send_as_register_address">จัดส่งสินค้าตามที่อยู่ที่แจ้งไว้</string>
+
+        <string name="form_imformation_title">กรอกข้อมูลการรับสินค้า</string>
+
+        <string name="form_send_product_recieve_name">ชื่อผู้รับ</string>
+        <string name="form_send_product_mobile">เบอร์ติดต่อ</string>
+        <string name="form_send_product_address">ที่อยู่</string>
+        <string name="form_send_product_zip">รหัสไปรษณีย์</string>
+        <string name="form_send_product_note">หมายเหตุ</string>
+
+        <string name="building">อาคาร</string>
+        <string name="street">ถนน</string>
+        <string name="village">หมู่บ้าน</string>
+        <string name="soi">ซอย</string>
+
+        <string name="verify">ตรวจสอบสินค้า</string>
+        <string name="ok">ตกลง</string>
+
+        <string name="confirm_information_title_list">รายการสินค้า</string>
+        <string name="confirm_information_title_branch">สาขาที่รับสินค้า</string>
+        <string name="confirm_information_title">ยืนยันข้อมูล</string>
+        <string name="confirm_order_type">ประเภทบิล</string>
+        <string name="confirm_paymetn_gateway">ช่องทางการชำระงิน</string>
+        <string name="confirm_net_price">ยอดสุทธิ</string>
+
+        <string name="edit_info">แก้ไข</string>
+        <string name="apply_info">ยืนยัน</string>
+
+        <string name="spinner_order_type">กรุณาเลือกประเภทบิล</string>
+        <string name="spinner_payment">กรุณาเลือกช่องทางการชำระเงิน</string>
+        <string name="spinner_province">กรุณาเลือกจังหวัด</string>
+        <string name="spinner_district">กรุณาเลือกเขต/อำเภอ</string>
+        <string name="spinner_sub_district">กรุณาเลือกแขวง/ตำบล</string>
+        <string name="spinner_branch">กรุณาเลือกสาขา</string>
+        <string name="spinner_date">วันที่</string>
+        <string name="spinner_month">เดือน</string>
+        <string name="spinner_year">ปี</string>
+        <string name="spinner_nationality">กรุณาเลือกสัญชาติ</string>
+
+        <string name="clarify_title">แจงยอด</string>
+        <string name="clarify_button_left">รายการสั่งซื้อ</string>
+        <string name="clarify_button_right">ดำเนินการต่อ</string>
+
+        <string name="signup_first_page">ข้อกำหนดและเงื่อนไข</string>
+        <string name="signup_second_page">กรอกข้อมูล</string>
+        <string name="signup_thrid_page">ยืนยันข้อมูล</string>
+        <string name="signup_button_decline">ไม่ยอมรับ</string>
+        <string name="signup_button_accept">ยอมรับ</string>
+
+        <string name="signup_button_save">บันทึก</string>
+        <string name="signup_button_clear">ล้าง</string>
+
+        <string name="signup_input_title1">ข้อมูลผู้แนะนำ</string>
+        <string name="signup_input_title2">ข้อมูลอัพไลน์</string>
+        <string name="signup_input_title3">ข้อมูลผู้สมัคร</string>
+        <string name="signup_input_title4">ที่อยู่ตามทะเบียนบ้าน</string>
+
+        <string name="signup_input_hint_register_name">ชื่อ - นามสกุล</string>
+        <string name="signup_input_hint_register_gender_male">ชาย</string>
+        <string name="signup_input_hint_register_gender_female">หญิง</string>
+        <string name="signup_input_hint_register_nationality">สัญชาติ</string>
+        <string name="signup_input_hint_register_id">เลขประจำตัวประชาชน/พาสปอร์ต</string>
+        <string name="signup_input_hint_register_mobile">โทรศัพท์มือถือ</string>
+        <string name="signup_input_hint_register_email">อีเมลล์</string>
+        <string name="signup_input_hint_register_address">ที่อยู่</string>
+        <string name="signup_input_hint_register_zip">รหัสไปรษณีย์</string>
+
+        <string name="prefix">คำนำหน้า</string>
+        <string name="prefix_name_male">นาย</string>
+        <string name="prefix_name_female_single">นางสาว</string>
+        <string name="prefix_name_female_married">นาง</string>
+        <string name="prefix_name_other">อื่นๆ</string>
+
+        <string name="sponsors_id_empty">กรุณาใส่รหัสผู้แนะนำ</string>
+        <string name="side_empty">กรุณาเลือกอย่างน้อยหนึ่งข้าง</string>
+
+        <string name="province">จังหวัด</string>
+        <string name="district">อำเภอ</string>
+        <string name="sub_district">ตำบล</string>
+
+        <string name="update_information_title1">อัพโหลดรูปโปรไฟล์</string>
+        <string name="update_information_title2">การติดต่อ</string>
+        <string name="update_information_title3">ที่อยู่ที่จัดส่งสินค้า</string>
+        <string name="update_information_choose_option_upload_image">เลือกวิธีอัพโหลดรูปโปรไฟล์</string>
+        <string name="update_information_dialog_option_question">คุณต้องการเปลี่ยนรูปโปรไฟล์ใช่หรือไม่?</string>
+        <string name="update_information_option_gallery">แกลลอรี่</string>
+        <string name="update_information_option_camera">กล้อง</string>
+
+        <string name="search_member_id">ค้นหา</string>
+        <string name="choose_bill">เลือกบิล</string>
+
+        <string name="eula_string">COPYRIGHTS:
+
+\nCopyright 2016 co.th.omc.Member All Rights Reserved.
+
+\n\nThis software may not, in whole or in any part, be copied, reproduced, transmitted, translated (into any
+language, natural or computer), stored in a retrieval system, reduced to any electronic medium or machine readable
+format, or by any other form or means without prior consent, in writing, from co.th.omc.Member.
+
+\n\nYou are granted a limited license to use this software. The software may be used or copied only in accordance
+with the terms of that license, which is described in the following paragraphs.
+
+\n\nTRADEMARKS:
+\n\n[Software logos, icons, etc that are Trademarked]
+
+\n\nLICENSE:
+\n\n\"THE SOFTWARE\" shall be taken to mean the software contained in this app and any subsequent versions
+or upgrades received as a result of having purchased this app. \"BUYER\" shall be taken as the original
+purchaser of the software.
+
+\n\nBuyer has the non-exclusive right to the use of software only on a single device. Buyer may not electronically
+transfer the program from one device to another over any type of network. Buyer may not distribute copies
+of the software or the accompanying documentation to others either for a fee or without charge. Buyer may not modify
+or translate the program or documentation. User may not disassemble the program or allow it to be disassembled
+into its constituent source code. Buyer\'s use of the software indicates his/her acceptance of these terms
+and conditions. If buyer does not agree to these conditions, return the distribution media, documentation, and
+associated materials to the vendor from whom the software was purchased, and/or uninstall the software from the device,
+and erase the software from any and all storage devices upon which it may have been installed.
+
+\n\nThis license agreement shall be governed by the laws of The United States of America, Massachusetts and
+shall inure to the benefit of co.th.omc.Member or its assigns.
+
+\n\nDISCLAIMER / LIMITATION OF LIABILITY:
+\n\nBuyer acknowledges that the software may not be free from defects and may not satisfy all of buyer\'s
+needs. co.th.omc.Member warrants all media on which the software is distributed for 60 days to be free from defects
+in normal use. The software and any accompanying written materials are licensed \"AS IS\". Buyer\'s exclusive
+remedy during the warranty period (if any) shall consist of replacement of distribution media if determined to be
+faulty. In no event will co.th.omc.Member be liable for direct, indirect, incidental or consequential damage or
+damages resulting from loss of use, or loss of anticipated profits resulting from any defect in the software,
+even if it has been advised of the possibility of such damage. Some laws do not allow exclusion or limitation
+of implied warranties or liabilities for incidental or consequential damages, so the above limitations or
+exclusion may not apply.
+
+\n\nSPECIFIC RESTRICTIONS:
+\n\nIn accordance with the COMPUTER SOFTWARE RENTAL ACT OF 1990, this software may not be rented, lent or leased.
+\n\nThe software and accompanying documentation may not be provided by a \"Backup Service\" or any other vendor
+which does not provide an original package as composed of co.th.omc.Member, including but not limited to all original
+distribution media, documentation, registration cards, and insertions.</string>
+</resources>

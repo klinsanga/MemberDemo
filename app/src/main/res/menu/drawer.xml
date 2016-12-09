@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/product"
+            android:checked="false"
+            android:title="หน้าหลัก" />
+    </group>
+
+    <item
+        android:title="จัดการบัญชี">
+        <menu>
+            <group>
+                <item
+                    android:title="ข้อมูลสมาชิก" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="ข้อมูลการซื้อขาย">
+        <menu>
+            <group>
+                <item
+                    android:title="สั่งซื้อสินค้า"/>
+                <item
+                    android:title="ประวัติการสั่งซื้อ"/>
+                <item
+                    android:title="แจงยอด"/>
+                <item
+                    android:title="ประวัติการแจงยอด"/>
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="กระเป๋าเงิน">
+        <menu>
+            <group>
+                <item
+                    android:title="Ewallet"/>
+                <item
+                    android:title="Ecom"/>
+                <item
+                    android:title="Evoucher"/>
+                <item
+                    android:title="Eautoship"/>
+            </group>
+        </menu>
+    </item>
+
+    <group android:id="@+id/contact_section"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/contact"
+            android:checked="false"
+            android:title="ตั้งค่า" />
+
+        <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:title="ออกจากระบบ" />
+    </group>
+</menu>

@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="th.co.omc.memberdemo.activity.signup.ApplyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/area_footer"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <cn.bit.szw.widget.StepView
+                android:id="@+id/stepview2"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp">
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_input_title1"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_sponsors_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0000001"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_sponsors_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Demo"
+                        android:textSize="24dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"/>
+
+                    <include layout="@layout/item_divider"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_input_title2"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="16dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_upline_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0000035"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_upline_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gulico"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_upline_side"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="right"
+                        android:textSize="24dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"/>
+
+                    <include layout="@layout/item_divider"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_input_title3"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_name_with_prefix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mr. Demo Demo"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_birthdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1987-04-17"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thailand"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_identification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1112233458967"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="029657126"
+                        android:textSize="24dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="test@omc.co.th"
+                        android:textSize="24dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"/>
+
+                    <include layout="@layout/item_divider"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/signup_input_title4"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16dp"/>
+
+                    <th.co.omc.memberdemo.customview.CustomTextview
+                        android:id="@+id/apply_register_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="68/847 ตำบลบางกระสอ อำเภอเมืองนนทบุรี\n จังหวัดนนทบุรี 11000"
+                        android:textSize="24dp"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/area_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/checkbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/button_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="@string/edit_info"
+                    android:textSize="24dp"
+                    android:background="@color/colorAccent"/>
+
+                <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/button_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="@string/apply_info"
+                    android:textSize="24dp"
+                    android:textColor="@color/White"
+                    android:background="#7aa201"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
