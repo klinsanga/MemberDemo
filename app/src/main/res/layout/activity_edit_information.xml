@@ -77,6 +77,63 @@
                             android:padding="1dp">
 
                             <th.co.omc.memberdemo.customview.CustomEdittext
+                                android:id="@+id/update_member_mobile"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="4"
+                                android:layout_gravity="center"
+                                android:padding="4dp"
+                                android:background="@drawable/input_edittext"
+                                android:textSize="20sp"
+                                android:inputType="phone"
+                                android:hint="@string/form_send_product_mobile"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_edittext_with_border"
+                            android:padding="1dp">
+
+                            <th.co.omc.memberdemo.customview.CustomEdittext
+                                android:id="@+id/update_member_email"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_weight="4"
+                                android:layout_gravity="center"
+                                android:padding="4dp"
+                                android:background="@drawable/input_edittext"
+                                android:textSize="20sp"
+                                android:inputType="textEmailAddress"
+                                android:hint="@string/signup_input_hint_register_email"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"/>
+
+                        <th.co.omc.memberdemo.customview.CustomTextview
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/update_information_title3"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_edittext_with_border"
+                            android:padding="1dp">
+
+                            <th.co.omc.memberdemo.customview.CustomEdittext
                                 android:id="@+id/update_mobile"
                                 android:layout_width="0dp"
                                 android:layout_height="35dp"
@@ -119,13 +176,6 @@
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="16dp"/>
-
-                        <th.co.omc.memberdemo.customview.CustomTextview
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/update_information_title3"
-                            android:textColor="@color/colorAccent"
-                            android:textSize="16dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"

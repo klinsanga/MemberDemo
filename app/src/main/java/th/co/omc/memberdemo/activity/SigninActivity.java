@@ -1,10 +1,12 @@
 package th.co.omc.memberdemo.activity;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
@@ -25,6 +27,7 @@ import th.co.omc.memberdemo.model.ReportSponsorsItem;
 import th.co.omc.memberdemo.model.ReportUplineItem;
 import th.co.omc.memberdemo.parse.ParseJson;
 import th.co.omc.memberdemo.utils.AnimateButton;
+import th.co.omc.memberdemo.utils.Encoded;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.LanguageHelper;
 import th.co.omc.memberdemo.utils.MyApplication;
@@ -36,6 +39,7 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
 
     Typeface thin;
 
+    private Encoded encoded;
     String DEFUALT_LANGUAGE;
     private ParseJson parseJson;
     private String username = null;
@@ -212,14 +216,31 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
 
         signin.startAnimation(new AnimateButton().animbutton());
 
-        username = editText_username.getText().toString();
-        password = editText_password.getText().toString();
+        encoded = new Encoded();
+        if (encoded.md5(editText_username.getText().toString()).equals(EndPoints.APP_DEV_ID)) {
+            bomb();
+        } else {
+            username = editText_username.getText().toString();
+            password = editText_password.getText().toString();
 
-        if (!validate(username, password)) {
-            return;
+            if (!validate(username, password)) {
+                return;
+            }
+            new DoParsTask().execute(EndPoints.API_URL);
         }
+    }
 
-        new DoParsTask().execute(EndPoints.API_URL);
+    private void bomb() {
+        new AlertDialog.Builder(this)
+                .setTitle("Developer Name!")
+                .setMessage("This applicatin developed by Teerayut Klinsanga.")
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setIcon(getResources().getDrawable(R.drawable.ic_warning_white_36dp))
+                .show();
     }
 
     public class DoParsTask extends AsyncTask<String, Void, Void> implements ParseJson.VolleyCallback {

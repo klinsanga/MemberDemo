@@ -284,6 +284,10 @@ public class MainActivity extends AppCompatActivity {
                     FragmentManager manager = getSupportFragmentManager();
                     FragmentTransaction transaction = manager.beginTransaction();
                     transaction.replace(R.id.content_frame, new MemberInfoFragment(), "MemberInfoFragment").addToBackStack(null).commit();
+                } else if (activity.equals("billhold")) {
+                    FragmentManager manager = getSupportFragmentManager();
+                    FragmentTransaction transaction = manager.beginTransaction();
+                    transaction.replace(R.id.content_frame, new ClarifyMainFragment(), "ClarifyMainFragment").addToBackStack(null).commit();
                 }
             }
         } catch (Exception e) {

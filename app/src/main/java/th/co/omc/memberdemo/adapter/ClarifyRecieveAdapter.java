@@ -54,8 +54,8 @@ public class ClarifyRecieveAdapter extends RecyclerView.Adapter<ClarifyRecieveAd
         ClarifyRecieveItem item = clarifyRecieveItemList.get(position);
         holder.holdNumber.setText(item.getHoldNumber());
         holder.clarifyNumber.setText(context.getResources().getString(R.string.clarify_recieve_bill_number) + ". " + item.getNormalNumber());
-        holder.buyerID.setText(": " + item.getBuyerID());
-        holder.buyerName.setText(": " + item.getBuyerName());
+        //holder.buyerID.setText(": " + item.getBuyerID());
+        holder.buyerName.setText(item.getBuyerName() + " (" + item.getBuyerID() + ")");
         holder.clarifyBy.setText(item.getBy());
         holder.billType.setText(item.getBillType());
         holder.recieveDate.setText(customizeDateTime.fullDate(item.getBuyDate()));
@@ -72,7 +72,7 @@ public class ClarifyRecieveAdapter extends RecyclerView.Adapter<ClarifyRecieveAd
 
         @Bind(R.id.clarify_recieve_number) CustomTextview holdNumber;
         @Bind(R.id.clarify_number) CustomTextview clarifyNumber;
-        @Bind(R.id.clarify_recieve_id) CustomTextview buyerID;
+        //@Bind(R.id.clarify_recieve_id) CustomTextview buyerID;
         @Bind(R.id.clarify_recieve_name) CustomTextview buyerName;
         @Bind(R.id.clarify_recieve_save) CustomTextview clarifyBy;
         @Bind(R.id.clarify_recieve_type) CustomTextview billType;

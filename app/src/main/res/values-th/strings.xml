@@ -69,7 +69,7 @@
         <string name="tab_report">รายงานเข้า-ออก</string>
 
         <!-- Clarify tab name -->
-        <string name="clarify">แจงยอด</string>
+        <string name="clarify_button">ยืนยัน</string>
         <string name="clarify_history">ประวัติ</string>
         <string name="clarify_recieve">รับแจง</string>
 
@@ -366,6 +366,9 @@
 
         <string name="search_member_id">ค้นหา</string>
         <string name="choose_bill">เลือกบิล</string>
+
+        <string name="line_id">ไลน์ไอดี</string>
+        <string name="facebook">เฟซบุ๊ค</string>
 
         <string name="eula_string">COPYRIGHTS:
 

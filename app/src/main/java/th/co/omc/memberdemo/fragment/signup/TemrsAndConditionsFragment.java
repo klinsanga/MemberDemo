@@ -38,6 +38,7 @@ public class TemrsAndConditionsFragment extends Fragment implements View.OnClick
     @Bind(R.id.textviewError) CustomTextview textviewerror;
     @Bind(R.id.button_decline) CustomTextview buttonDecline;
     @Bind(R.id.button_accept) CustomTextview buttonAccept;
+    @Bind(R.id.checkbox_string) CustomTextview checkboxString;
     public TemrsAndConditionsFragment() {
         // Required empty public constructor
     }
@@ -80,6 +81,7 @@ public class TemrsAndConditionsFragment extends Fragment implements View.OnClick
         signUpActivity.setToolbarTitle(R.string.signup_first_page);
         buttonDecline.setOnClickListener(this);
         buttonAccept.setOnClickListener(this);
+        checkboxString.setOnClickListener(this);
     }
 
     @Override
@@ -101,12 +103,24 @@ public class TemrsAndConditionsFragment extends Fragment implements View.OnClick
         switch (view.getId()) {
             case R.id.button_decline :
                 buttonDecline.startAnimation(new AnimateButton().animbutton());
+                decline();
                 break;
             case R.id.button_accept :
                 buttonAccept.startAnimation(new AnimateButton().animbutton());
                 isChecked();
                 break;
+            case R.id.checkbox_string :
+                checkbox();
+                break;
             default: break;
+        }
+    }
+
+    private void checkbox() {
+        if (checkBox.isChecked()) {
+            checkBox.setChecked(false);
+        } else {
+            checkBox.setChecked(true);
         }
     }
 
@@ -120,6 +134,13 @@ public class TemrsAndConditionsFragment extends Fragment implements View.OnClick
         }
     }
 
+    private void decline() {
+        checkBox.setChecked(false);
+        MyApplication.getInstance().getPrefManager().storeAcceptTerms(false);
+        getActivity().startActivity(new Intent(getActivity(), MainActivity.class));
+        getActivity().finish();
+    }
+
     private void nextStep() {
         FragmentManager manager = getFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
@@ -130,7 +151,8 @@ public class TemrsAndConditionsFragment extends Fragment implements View.OnClick
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == android.R.id.home) {
-            startActivity(new Intent(getActivity(), MainActivity.class));
+            getActivity().startActivity(new Intent(getActivity(), MainActivity.class));
+            getActivity().finish();
         }
         return super.onOptionsItemSelected(item);
     }

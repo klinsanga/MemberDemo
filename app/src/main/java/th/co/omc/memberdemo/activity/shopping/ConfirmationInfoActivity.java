@@ -268,7 +268,7 @@ public class ConfirmationInfoActivity extends AppCompatActivity implements View.
 
         @Override
         public void onFailed(String result) {
-            alertFail();
+            alertFail(result);
         }
 
         @Override
@@ -277,15 +277,17 @@ public class ConfirmationInfoActivity extends AppCompatActivity implements View.
         }
     }
 
-    private void alertFail() {
+    private void alertFail(String str) {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         final LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.custom_alert_failed, null);
+        CustomTextview msg = (CustomTextview) dialogView.findViewById(R.id.msg_fail);
+        msg.setText(str);
         dialogBuilder.setView(dialogView);
         final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
 
-        new CountDownTimer(1500, 1000) {
+        new CountDownTimer(3500, 1000) {
 
             public void onTick(long millisUntilFinished) {
             }

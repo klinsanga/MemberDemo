@@ -26,6 +26,7 @@ import th.co.omc.memberdemo.adapter.AllsaleAdapter;
 import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.AllsaleItem;
 import th.co.omc.memberdemo.parse.ParseCommission;
+import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.setCalendarToMultipleLanguage;
 
@@ -146,6 +147,7 @@ public class UnilevelFragment extends Fragment implements View.OnClickListener {
         transaction = manager.beginTransaction();
         switch (view.getId()) {
             case R.id.uni_back_btn :
+                back.startAnimation(new AnimateButton().animbutton());
                 CommissionTabFragment tabFragment = new CommissionTabFragment();
                 Bundle bundle=new Bundle();
                 bundle.putString("FragmentActivity", "month");
@@ -153,9 +155,11 @@ public class UnilevelFragment extends Fragment implements View.OnClickListener {
                 transaction.replace(R.id.content_frame, tabFragment, "CommissionTabFragment").addToBackStack(null).commit();
                 break;
             case R.id.uni_btn_next:
+                next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
                 break;
             case R.id.uni_btn_previous :
+                previous.startAnimation(new AnimateButton().animbutton());
                 previousMonth();
                 break;
             default:break;

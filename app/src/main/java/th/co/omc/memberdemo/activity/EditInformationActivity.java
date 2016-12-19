@@ -30,7 +30,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -99,6 +98,8 @@ public class EditInformationActivity extends AppCompatActivity implements View.O
 
     @Bind(R.id.image_profile) CircleImageView imgProfile;
     @Bind(R.id.button_update) CustomTextview buttonUpdate;
+    @Bind(R.id.update_member_mobile) CustomEdittext updateMemberMobile;
+    @Bind(R.id.update_member_email) CustomEdittext updateMemberEmail;
     @Bind(R.id.update_mobile) CustomEdittext edittextMobile;
     @Bind(R.id.update_email) CustomEdittext edittextEmail;
     @Bind(R.id.update_address) CustomEdittext edittextAddress;
@@ -170,6 +171,8 @@ public class EditInformationActivity extends AppCompatActivity implements View.O
         imageLoader = new ImageLoader(this);
         imageLoader.clearCache();
         imageLoader.DisplayImage(itemMember.getProfileImage(), imgProfile);
+        updateMemberMobile.setText(itemMember.getMobile());
+        updateMemberEmail.setText(itemMember.getEmail());
     }
 
     @Override
@@ -317,6 +320,8 @@ public class EditInformationActivity extends AppCompatActivity implements View.O
 
     private void getEdittextInformation() {
         updateModel = new UpdateModel(
+                updateMemberMobile.getText().toString(),
+                updateMemberEmail.getText().toString(),
                 edittextMobile.getText().toString(),
                 edittextEmail.getText().toString(),
                 edittextAddress.getText().toString(),
@@ -397,7 +402,7 @@ public class EditInformationActivity extends AppCompatActivity implements View.O
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if (position > 0) {
-                    ((TextView) view.findViewById(R.id.row_item)).setTextColor(getResources().getColor(R.color.colorAccent));
+                    //((TextView) view.findViewById(R.id.row_item)).setTextColor(getResources().getColor(R.color.colorAccent));
                     provinceID = provinceModelList.get(position - 1).getProvicneId();
                     provincename = provinceModelList.get(position - 1).getProvinceTh();
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -449,7 +454,7 @@ public class EditInformationActivity extends AppCompatActivity implements View.O
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if (position > 0) {
-                    ((TextView) view.findViewById(R.id.row_item)).setTextColor(getResources().getColor(R.color.colorAccent));
+                    //((TextView) view.findViewById(R.id.row_item)).setTextColor(getResources().getColor(R.color.colorAccent));
                     districtID = districtModelList.get(position).getDistrictId();
                     districtname = districtModelList.get(position).getDistrictTh();
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -506,7 +511,7 @@ public class EditInformationActivity extends AppCompatActivity implements View.O
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 if (position > 0) {
-                    ((TextView) view.findViewById(R.id.row_item)).setTextColor(getResources().getColor(R.color.colorAccent));
+                    //((TextView) view.findViewById(R.id.row_item)).setTextColor(getResources().getColor(R.color.colorAccent));
                     subdistrictID = subDistrictModelList.get(position).getSubdistrictId();
                     subdistrictname = subDistrictModelList.get(position).getSubdistrictTh();
                 } else {

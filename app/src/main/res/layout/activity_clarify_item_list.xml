@@ -283,7 +283,7 @@
                     android:layout_weight="1"
                     android:layout_margin="2dp"
                     android:gravity="center"
-                    android:text="@string/clarify"
+                    android:text="@string/clarify_button"
                     android:textSize="24dp"
                     android:textColor="@color/White"
                     android:background="@color/DodgerBlue"/>

@@ -24,6 +24,7 @@ import th.co.omc.memberdemo.adapter.WeekAdapter;
 import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.WeekItem;
 import th.co.omc.memberdemo.parse.ParseWeek;
+import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.setCalendarToMultipleLanguage;
 
@@ -152,9 +153,11 @@ public class WeekCommissionFragment extends Fragment implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.week_btn_next:
+                next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
                 break;
             case R.id.week_btn_previous:
+                previous.startAnimation(new AnimateButton().animbutton());
                 previousMonth();
                 break;
             default:

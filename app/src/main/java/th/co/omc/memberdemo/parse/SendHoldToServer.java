@@ -30,6 +30,9 @@ public class SendHoldToServer {
     public static final String TAG = SendDataToServer.class.getSimpleName();
 
     private String url;
+    private int itemQuatity = 0;
+    private int pv = 0;
+    private int price = 0;
     List<CartItem> cartItemList = Collections.emptyList();
     private List<InformationModel> informationModelList = new ArrayList<InformationModel>();
     public SendHoldToServer(String url, List<CartItem> productList, List<InformationModel> informationModelList) {
@@ -71,19 +74,30 @@ public class SendHoldToServer {
                 for (InformationModel model : informationModelList) {
                     params.put("uid", model.getUid());
                     params.put("mcode", model.getMcode());
+                    params.put("bid", model.getNote());
                 }
 
                 CartItem cartItem = null;
                 for (int i = 0; i < cartItemList.size(); i++) {
                     cartItem = cartItemList.get(i);
-                    int itemQty = cartItem.getQuantity();
+                    itemQuatity += Integer.parseInt(cartItem.getQuantity() + "");
+                    Log.e("item qty", itemQuatity + "");
+                    pv += (cartItem.getQuantity() * new Double(cartItem.getProduct().getProductPV()).intValue());
+                    Log.e("total pv", pv + "");
+                    price += (cartItem.getQuantity() * Integer.parseInt(cartItem.getProduct().getPrice() + ""));
+                    Log.e("total price", price + "");
+                    int itemqty = cartItem.getQuantity();
+                    /*Double d = new Double(cartItem.getProduct().getProductPV());
+                    int pv = d.intValue();*/
                     String itemPrice = cartItem.getProduct().getPrice() + "";
                     params.put("pcode["+ i +"]", cartItem.getProduct().getProductCode());
                     params.put("price["+ i +"]", cartItem.getProduct().getPrice() + "");
                     params.put("pv["+ i +"]", cartItem.getProduct().getProductPV());
                     params.put("id["+ i +"]", cartItem.getProduct().getProductWeight());
                     params.put("qty["+ i +"]", cartItem.getQuantity() + "");
-                    params.put("amt["+ i +"]", (itemQty * Integer.parseInt(itemPrice)) + "");
+                    params.put("amt["+ i +"]", (itemqty * Integer.parseInt(itemPrice)) + "");
+                    params.put("tot_pv", pv + "");
+                    params.put("tot_price", price + "");
                 }
                 return params;
             }

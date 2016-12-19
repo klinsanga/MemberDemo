@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -48,7 +51,11 @@ public class ConfirmItemAdapter extends RecyclerView.Adapter<ConfirmItemAdapter.
         imageLoader = new ImageLoader(context);
         final CartItem cartItem = cartItemList.get(position);
 
-        imageLoader.DisplayImage(cartItem.getProduct().getProductThumbs(), holder.productThumbs);
+        //imageLoader.DisplayImage(cartItem.getProduct().getProductThumbs(), holder.productThumbs);
+        Glide.with(context)
+                .load(cartItem.getProduct().getProductThumbs())
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(holder.productThumbs);
         holder.productCode.setText(context.getResources().getString(R.string.product_code) + " " + cartItem.getProduct().getProductCode());
         holder.productPV.setText(cartItem.getProduct().getProductPV() + " " + context.getResources().getString(R.string.product_pv));
         holder.productDesc.setText(cartItem.getProduct().getName());

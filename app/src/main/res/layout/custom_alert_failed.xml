@@ -24,6 +24,7 @@
                 android:src="@drawable/fail"/>
 
             <th.co.omc.memberdemo.customview.CustomTextview
+                android:id="@+id/msg_fail"
                 android:layout_below="@+id/img"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

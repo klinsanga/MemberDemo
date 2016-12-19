@@ -30,6 +30,7 @@ import th.co.omc.memberdemo.activity.MainActivity;
 import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.signup.SignupDataModel;
 import th.co.omc.memberdemo.parse.SendDataRegister;
+import th.co.omc.memberdemo.parse.SendUpdateToServer;
 import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 
@@ -219,6 +220,11 @@ public class ApplyActivity extends AppCompatActivity implements View.OnClickList
         public void onsendDataRegisterCallbackSuccess(String msg) {
             Log.e("Status register", msg);
             if (msg.equals("SUCCESS")) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                    new DoParsNewData().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, EndPoints.API_DATA);
+                } else {
+                    new DoParsNewData().execute(EndPoints.API_DATA);
+                }
                 alertSuccess();
             } else {
                 alertFail();
@@ -278,5 +284,28 @@ public class ApplyActivity extends AppCompatActivity implements View.OnClickList
                 alertDialog.dismiss();
             }
         }.start();
+    }
+
+    SendUpdateToServer sendUpdateToServer;
+    public class DoParsNewData extends AsyncTask<String, Void, Void> implements SendUpdateToServer.requestUpdateCallback {
+
+        @Override
+        protected Void doInBackground(String... strings) {
+            for (String url : strings) {
+                sendUpdateToServer = new SendUpdateToServer(url);
+            }
+            sendUpdateToServer.requestUpdate(this);
+            return null;
+        }
+
+        @Override
+        public void onFailed(String result) {
+
+        }
+
+        @Override
+        public void onrequestCallbackSuccess() {
+
+        }
     }
 }

@@ -50,6 +50,8 @@ public class SendDataToServer {
                             obj = new JSONObject(response);
                             if (obj.getString("STATUS").equals("SUCCESS")) {
                                 callback.onsendDataCallbackSuccess(obj.getString("MESSAGE"));
+                            } else {
+                                callback.onFailed(obj.getString("MESSAGE"));
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

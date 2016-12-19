@@ -86,6 +86,7 @@ public class SpinnerCustomAdapter extends ArrayAdapter<String> {
             }
         } else {
             textView.setText(model.getItemName());
+            textView.setTextColor(activity.getResources().getColor(R.color.colorAccent));
         }
         return row;
     }

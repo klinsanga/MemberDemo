@@ -76,17 +76,19 @@ public class SendUpdateToServer {
                 params.put(EndPoints.KEY_API, EndPoints.API_KEYCODE);
                 params.put(EndPoints.KEY_USERNAME, MyApplication.getInstance().getPrefManager().getUser().getMemberCode());
                 for (UpdateModel model : updateModelList) {
-                    params.put("mobile", model.getMobile());
-                    params.put("email", model.getEmail());
-                    params.put("address", model.getAddress());
-                    params.put("building", model.getBuilding());
-                    params.put("village", model.getVillage());
-                    params.put("soi", model.getSoi());
-                    params.put("street", model.getStreet());
-                    params.put("district", model.getSubDistrict());
-                    params.put("amphor", model.getDistrict());
-                    params.put("province", model.getProvince());
-                    params.put("zip", model.getZip());
+                    params.put("mobile", model.getMemberMobile());
+                    params.put("email", model.getMemberEmail());
+                    params.put("cmobile", model.getMobile());
+                    params.put("cemail", model.getEmail());
+                    params.put("caddress", model.getAddress());
+                    params.put("cbuilding", model.getBuilding());
+                    params.put("cvillage", model.getVillage());
+                    params.put("csoi", model.getSoi());
+                    params.put("cstreet", model.getStreet());
+                    params.put("cdistrict", model.getSubDistrict());
+                    params.put("camphor", model.getDistrict());
+                    params.put("cprovince", model.getProvince());
+                    params.put("czip", model.getZip());
                     params.put("image", model.getImageName());
                 }
                 return params;
@@ -132,14 +134,14 @@ public class SendUpdateToServer {
                                             jsonObject.isNull("pos_cur2") ? "" : jsonObject.getJSONObject("pos_cur2").getString("POS_IMAGE"),
                                             jsonObject.getString("ALL_POINT"),
                                             jsonObject.getString("AUTOSHIP_POINT"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_NAME"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_MCODE"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("ALL_POINT"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("PROFILE_IMG"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_NAME"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_MCODE"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("ALL_POINT"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("PROFILE_IMG"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_NAME"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_MCODE"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("ALL_POINT"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("PROFILE_IMG"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_NAME"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_MCODE"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("ALL_POINT"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("PROFILE_IMG"),
                                             jsonObject.getString("locationbase")
                                     );
                                 }

@@ -611,7 +611,6 @@ public class InputMethodActivity extends AppCompatActivity implements View.OnCli
             });
 
             for (int i = 0; i < OrderArrayList.size(); i++) {
-                Log.e("Order list", OrderArrayList.get(i).getItemName());
                 if (i > 0) {
                     typeModel = new TypeModel(
                             OrderArrayList.get(i).getItemName()

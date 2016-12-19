@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 public class UpdateModel implements Serializable {
 
+    private String memberMobile;
+    private String memberEmail;
     private String mobile;
     private String email;
     private String address;
@@ -22,7 +24,9 @@ public class UpdateModel implements Serializable {
     private String imageName;
 
 
-    public UpdateModel(String mobile, String email, String address, String building, String village, String soi, String street, String subDistrict, String district, String province, String zip, String imageName) {
+    public UpdateModel(String memberMobile, String memberEmail, String mobile, String email, String address, String building, String village, String soi, String street, String subDistrict, String district, String province, String zip, String imageName) {
+        this.memberMobile = memberMobile;
+        this.memberEmail = memberEmail;
         this.mobile = mobile;
         this.email = email;
         this.address = address;
@@ -135,5 +139,21 @@ public class UpdateModel implements Serializable {
 
     public void setImageName(String imageName) {
         this.imageName = imageName;
+    }
+
+    public String getMemberEmail() {
+        return memberEmail;
+    }
+
+    public void setMemberEmail(String memberEmail) {
+        this.memberEmail = memberEmail;
+    }
+
+    public String getMemberMobile() {
+        return memberMobile;
+    }
+
+    public void setMemberMobile(String memberMobile) {
+        this.memberMobile = memberMobile;
     }
 }

@@ -23,6 +23,7 @@ import th.co.omc.memberdemo.adapter.ClarifyRecieveAdapter;
 import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.ClarifyRecieveItem;
 import th.co.omc.memberdemo.parse.ParseClarify;
+import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.setCalendarToMultipleLanguage;
 
@@ -131,9 +132,11 @@ public class ClarifyRecieveFragment extends Fragment implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.clarify_recieve_btn_next :
+                next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
                 break;
             case R.id.clarify_recieve_btn_previous :
+                previous.startAnimation(new AnimateButton().animbutton());
                 previousMonth();
                 break;
             default: break;

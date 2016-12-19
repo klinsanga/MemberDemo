@@ -79,6 +79,7 @@
                     android:checked="false"/>
 
                 <th.co.omc.memberdemo.customview.CustomTextview
+                    android:id="@+id/checkbox_string"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/signup_first_page"/>

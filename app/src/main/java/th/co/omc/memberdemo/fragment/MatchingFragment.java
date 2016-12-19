@@ -27,6 +27,7 @@ import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.FaststartItem;
 import th.co.omc.memberdemo.model.TotalItem;
 import th.co.omc.memberdemo.parse.ParseCommission;
+import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.setCalendarToMultipleLanguage;
 
@@ -146,12 +147,15 @@ public class MatchingFragment extends Fragment implements View.OnClickListener, 
         transaction = manager.beginTransaction();
         switch (view.getId()) {
             case R.id.matching_back_btn :
+                back.startAnimation(new AnimateButton().animbutton());
                 transaction.replace(R.id.content_frame, new CommissionTabFragment(), "CommissionTabFragment").addToBackStack(null).commit();
                 break;
             case R.id.matchin_btn_next :
+                next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
                 break;
             case R.id.matching_btn_previous :
+                previous.startAnimation(new AnimateButton().animbutton());
                 previousMonth();
                 break;
             default: break;

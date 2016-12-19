@@ -23,6 +23,7 @@ import th.co.omc.memberdemo.adapter.ClarifyAdapter;
 import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.ClarifyItem;
 import th.co.omc.memberdemo.parse.ParseClarify;
+import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.setCalendarToMultipleLanguage;
 
@@ -131,9 +132,11 @@ public class ClarifyFragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.clarify_btn_next :
+                next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
                 break;
             case R.id.clarify_btn_previous :
+                previous.startAnimation(new AnimateButton().animbutton());
                 previousMonth();
                 break;
             default: break;

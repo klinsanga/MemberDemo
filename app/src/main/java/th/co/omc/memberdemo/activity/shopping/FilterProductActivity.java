@@ -28,8 +28,8 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
     @Bind(R.id.range_price) CustomTextview rangePrice;
     @Bind(R.id.range_pv) CustomTextview rangePv;
 
-    private int start;
-    private int end;
+    private int start = 0;
+    private int end = 0;
     private static String tag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,6 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
     }
 
     private void initWidget() {
-
         toolbar.setTitle("");
         toolbar.setTitleTextColor(getResources().getColor(R.color.White));
         ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon);
@@ -78,7 +77,6 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
                 intent.putExtra("start", start);
                 intent.putExtra("end", end);
                 intent.putExtra("tag", tag);
-
                 setResult(RESULT_OK, intent);
                 finish();
                 break;
@@ -117,8 +115,8 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
                 maxValue *= priceStep;
                 priceValueMin.setText(String.valueOf(minValue));
                 priceValueMax.setText(String.valueOf(maxValue));
-                Log.e("Filter min : ", String.valueOf(minValue));
-                Log.e("Filter max : ", String.valueOf(maxValue));
+                //Log.e("Filter min : ", String.valueOf(minValue));
+                //Log.e("Filter max : ", String.valueOf(maxValue));
             }
         });
 
@@ -129,11 +127,19 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
                 .setView(dialoglayout)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        rangePrice.setText(priceValueMin.getText().toString() + " - " + priceValueMax.getText().toString());
-                        start = Integer.parseInt(priceValueMin.getText().toString());
-                        end = Integer.parseInt(priceValueMax.getText().toString());
-                        tag = "price";
-                        dialog.dismiss();
+                        try {
+                            if (!priceValueMin.getText().toString().equals("min") && !priceValueMax.getText().toString().equals("max")) {
+                                rangePrice.setText(priceValueMin.getText().toString() + " - " + priceValueMax.getText().toString());
+                                start = Integer.parseInt(priceValueMin.getText().toString());
+                                end = Integer.parseInt(priceValueMax.getText().toString());
+                                tag = "price";
+                                dialog.dismiss();
+                            } else {
+                                dialog.dismiss();
+                            }
+                        } catch(Exception e) {
+                            Log.e("Error", e.toString());
+                        }
                     }
                 })
                 .show();
@@ -160,12 +166,12 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
         rangeSeekBar.setOnRangeSeekBarChangeListener(new RangeSeekBar.OnRangeSeekBarChangeListener<Integer>() {
             @Override
             public void onRangeSeekBarValuesChanged(RangeSeekBar<?> bar, Integer minValue, Integer maxValue) {
-                minValue = minValue*priceStep;
+                minValue = minValue * priceStep;
                 maxValue *= priceStep;
                 priceValueMin.setText(String.valueOf(minValue));
                 priceValueMax.setText(String.valueOf(maxValue));
-                Log.e("Filter min : ", String.valueOf(minValue));
-                Log.e("Filter max : ", String.valueOf(maxValue));
+                //Log.e("Filter min : ", String.valueOf(minValue));
+                //Log.e("Filter max : ", String.valueOf(maxValue));
             }
         });
 
@@ -176,11 +182,19 @@ public class FilterProductActivity extends AppCompatActivity implements View.OnC
                 .setView(dialoglayout)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        rangePv.setText(priceValueMin.getText().toString() + " - " + priceValueMax.getText().toString());
-                        start = Integer.parseInt(priceValueMin.getText().toString());
-                        end = Integer.parseInt(priceValueMax.getText().toString());
-                        tag = "pv";
-                        dialog.dismiss();
+                        try {
+                            if (!priceValueMin.getText().toString().equals("min") && !priceValueMax.getText().toString().equals("max")) {
+                                rangePv.setText(priceValueMin.getText().toString() + " - " + priceValueMax.getText().toString());
+                                start = Integer.parseInt(priceValueMin.getText().toString());
+                                end = Integer.parseInt(priceValueMax.getText().toString());
+                                tag = "pv";
+                                dialog.dismiss();
+                            } else {
+                                dialog.dismiss();
+                            }
+                        } catch(Exception e) {
+                            Log.e("Error", e.toString());
+                        }
                     }
                 })
                 .show();

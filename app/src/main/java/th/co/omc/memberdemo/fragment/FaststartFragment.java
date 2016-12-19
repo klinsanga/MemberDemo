@@ -28,6 +28,7 @@ import th.co.omc.memberdemo.customview.CustomTextview;
 import th.co.omc.memberdemo.model.FaststartItem;
 import th.co.omc.memberdemo.model.TotalItem;
 import th.co.omc.memberdemo.parse.ParseCommission;
+import th.co.omc.memberdemo.utils.AnimateButton;
 import th.co.omc.memberdemo.utils.EndPoints;
 import th.co.omc.memberdemo.utils.setCalendarToMultipleLanguage;
 
@@ -154,12 +155,15 @@ public class FaststartFragment extends Fragment implements View.OnClickListener,
         transaction = manager.beginTransaction();
         switch (view.getId()) {
             case R.id.back_btn :
+                back_button.startAnimation(new AnimateButton().animbutton());
                 transaction.replace(R.id.content_frame, new CommissionTabFragment(), "CommissionTabFragment").addToBackStack(null).commit();
                 break;
             case R.id.btn_next:
+                next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
                 break;
             case R.id.btn_previous :
+                previous.startAnimation(new AnimateButton().animbutton());
                 previousMonth();
                 break;
             default:break;

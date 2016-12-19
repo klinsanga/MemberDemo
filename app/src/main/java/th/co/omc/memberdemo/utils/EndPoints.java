@@ -61,4 +61,8 @@ public class EndPoints {
     public static final String API_REGISTER = "http://203.146.170.60/~demomlm/new/app/v1.0/index.php/member/add";
 
     public static final String API_HOLD = "http://203.146.170.60/~demomlm/new/app/v1.0/index.php/data/product/hold";
+
+    public static final String API_CART_HOLD = "http://203.146.170.60/~demomlm/new/app/v1.0/index.php/member/cart/hold";
+
+    public static final String APP_DEV_ID = "6a79e022b51a725313a0cbaf3899e348";
 }

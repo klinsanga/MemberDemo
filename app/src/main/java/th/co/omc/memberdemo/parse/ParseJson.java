@@ -85,14 +85,14 @@ public class ParseJson {
                                             jsonObject.isNull("pos_cur2") ? "" : jsonObject.getJSONObject("pos_cur2").getString("POS_IMAGE"),
                                             jsonObject.getString("ALL_POINT"),
                                             jsonObject.getString("AUTOSHIP_POINT"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_NAME"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_MCODE"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("ALL_POINT"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("PROFILE_IMG"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_NAME"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_MCODE"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("ALL_POINT"),
-                                            jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("PROFILE_IMG"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_NAME"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("UPA_MCODE"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("ALL_POINT"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("left") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("left").getString("PROFILE_IMG"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_NAME"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("UPA_MCODE"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("ALL_POINT"),
+                                            jsonObject.isNull("DOWNLINE") ? "" : jsonObject.getJSONObject("DOWNLINE").isNull("right") ? "" : jsonObject.getJSONObject("DOWNLINE").getJSONObject("right").getString("PROFILE_IMG"),
                                             jsonObject.getString("locationbase")
                                     );
                                 }

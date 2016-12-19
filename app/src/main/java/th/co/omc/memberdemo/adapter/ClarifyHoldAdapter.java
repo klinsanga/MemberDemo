@@ -54,8 +54,7 @@ public class ClarifyHoldAdapter extends RecyclerView.Adapter<ClarifyHoldAdapter.
 
         holder.holdNumber.setText(item.getHoldNumber());
         holder.clarifyNumber.setText(context.getResources().getString(R.string.clarify_hold_bill_number) + ". " + item.getNormalNumber());
-        holder.holdId.setText(item.getMemberID());
-        holder.holdName.setText(item.getMemberName());
+        holder.holdName.setText(item.getMemberName() + " (" + item.getMemberID() + ")");
         holder.holdType.setText(item.getBillType());
         holder.holdBuydate.setText(customizeDateTime.fullDate(item.getBuyDate()));
         holder.holdPv.setText(convertToCurrency.Currency(item.getPv()));
@@ -71,7 +70,6 @@ public class ClarifyHoldAdapter extends RecyclerView.Adapter<ClarifyHoldAdapter.
 
         @Bind(R.id.clarify_hold_number) CustomTextview holdNumber;
         @Bind(R.id.clarify_number) CustomTextview clarifyNumber;
-        @Bind(R.id.clarify_hold_id) CustomTextview holdId;
         @Bind(R.id.clarify_hold_name) CustomTextview holdName;
         @Bind(R.id.clarify_hold_type) CustomTextview holdType;
         @Bind(R.id.clarify_hold_buy_date) CustomTextview holdBuydate;

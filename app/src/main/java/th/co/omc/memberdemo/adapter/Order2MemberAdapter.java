@@ -62,7 +62,7 @@ public class Order2MemberAdapter extends RecyclerView.Adapter<Order2MemberAdapte
         holder.orderBy.setText(context.getResources().getString(R.string.order_pv) + ": " + convertToCurrency.Currency(item.getToMemberPv()));
         holder.orderRemark.setText(context.getResources().getString(R.string.order_price) + ": " + convertToCurrency.Currency(item.getToMemberAmount()));
 
-        if (item.getToMemberType().equals(null)) {
+        if (item.getToMemberType() == null) {
             holder.orderType.setText("");
         } else {
             holder.orderType.setText(item.getToMemberType());

@@ -3,7 +3,6 @@ package th.co.omc.memberdemo.adapter;
 import android.content.Context;
 import android.os.StrictMode;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,10 +53,10 @@ public class ClarifyProductAdapter extends RecyclerView.Adapter<ClarifyProductAd
         holder.productPV.setText(cartItem.getProduct().getProductPV() + " " + context.getResources().getString(R.string.product_pv));
         holder.productDesc.setText(cartItem.getProduct().getName());
         holder.productPrice.setText(convertToCurrency.Currency("" +cartItem.getProduct().getPrice()) + " " + context.getResources().getString(R.string.product_baht));
-        holder.productQty.setText(String.valueOf(cartItem.getQuantity()) + "");
+        holder.productQty.setText(cartItem.getQuantity() + "");
         holder.balance.setText(cartItem.getProduct().getProductQty());
 
-        if (cartItem.getQuantity() == 1) {
+        if (cartItem.getQuantity() == 0) {
             holder.downQty.setEnabled(false);
             holder.downQty.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_arrow_drop_down_disable_18dp));
         } else {
@@ -65,7 +64,6 @@ public class ClarifyProductAdapter extends RecyclerView.Adapter<ClarifyProductAd
             holder.downQty.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_arrow_drop_down_black_18dp));
         }
 
-        Log.e("qty", Integer.parseInt(holder.productQty.getText().toString()) + "");
         if (new Double(cartItem.getProduct().getProductQty()).intValue() == Integer.parseInt(holder.productQty.getText().toString())) {
             holder.upQty.setEnabled(false);
             holder.upQty.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_arrow_drop_up_disable_18dp));

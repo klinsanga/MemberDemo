@@ -1,5 +1,6 @@
 package th.co.omc.memberdemo.activity.billhold;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -32,6 +33,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import th.co.omc.memberdemo.R;
+import th.co.omc.memberdemo.activity.MainActivity;
 import th.co.omc.memberdemo.adapter.ClarifyProductAdapter;
 import th.co.omc.memberdemo.customview.CustomEdittext;
 import th.co.omc.memberdemo.customview.CustomTextview;
@@ -236,8 +238,8 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
         CartItem cartItem = cartItemList.get(position);
         cartItem.setQuantity(cartItem.getQuantity() + 1);
         cart.add(cartItem.getProduct(), 1);
-        adapter.notifyDataSetChanged();
         adapter.notifyItemRangeChanged(position, cartItemList.size());
+        adapter.notifyDataSetChanged();
     }
 
     @Override
@@ -245,8 +247,8 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
         CartItem cartItem = cartItemList.get(position);
         cartItem.setQuantity(cartItem.getQuantity() - 1);
         cart.remove(cartItem.getProduct(), 1);
-        adapter.notifyDataSetChanged();
         adapter.notifyItemRangeChanged(position, cartItemList.size());
+        adapter.notifyDataSetChanged();
     }
 
     public class DoParseMember extends AsyncTask<String, Void, Void> implements ParseMember2Clarify.parseMemberCallback {
@@ -324,16 +326,17 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
             informationModel = new InformationModel(
                     MyApplication.getInstance().getPrefManager().getUser().getMemberCode(),
                     memberID,
-                    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+                    "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+                    bid
             );
             informationModelList.add(informationModel);
             CartItem cartItem = null;
             cartItemList = new ExtactCartItem().getCartItems(cart);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-                new DoParseHold().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, EndPoints.API_HOLD);
+                new DoParseHold().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, EndPoints.API_CART_HOLD);
             } else {
-                new DoParseHold().execute(EndPoints.API_HOLD);
+                new DoParseHold().execute(EndPoints.API_CART_HOLD);
             }
         } else {
             alertFail();
@@ -354,6 +357,10 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
             }
 
             public void onFinish() {
+                Intent intent = new Intent(ClarifyItemListActivity.this, MainActivity.class);
+                intent.putExtra("Activity", "billhold");
+                startActivity(intent);
+                finish();
                 alertDialog.dismiss();
             }
         }.start();
@@ -404,7 +411,7 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
 
         @Override
         public void onFailed(String result) {
-
+            alertFail();
         }
 
         @Override

@@ -1,6 +1,7 @@
 package th.co.omc.memberdemo.fragment;
 
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.os.StrictMode;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -136,11 +138,25 @@ public class HomePageFragment extends Fragment implements View.OnClickListener{
                 startActivity(new Intent(getActivity(), ShoppingActivity.class));
                 break;
             case R.id.btn_home_3:
+                comingSoon();
                 break;
             case R.id.btn_home_4:
                 startActivity(new Intent(getActivity(), ClarifyActivity.class));
                 break;
             default: break;
         }
+    }
+
+    private void comingSoon() {
+        new AlertDialog.Builder(getActivity())
+                .setTitle("Coming soon!")
+                .setMessage("This function is in development.")
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setIcon(getResources().getDrawable(R.drawable.ic_warning_white_36dp))
+                .show();
     }
 }

@@ -16,7 +16,7 @@
         <string name="menu_member_info">Member information</string>
         <string name="menu_diagram">Diagram detial</string>
         <string name="menu_order_product">Order history</string>
-        <string name="menu_clarify">Clarify</string>
+        <string name="menu_clarify">Hold history</string>
         <string name="menu_ewallet">Ewallet</string>
         <string name="menu_commission">Commission</string>
         <string name="menu_system">System</string> <!-- Header menu -->
@@ -33,7 +33,7 @@
         <string name="buttonName1">Create an account</string>
         <string name="buttonName2">Shoping</string>
         <string name="buttonName3">Change Product</string>
-        <string name="buttonName4">Clarify</string>
+        <string name="buttonName4">Hold</string>
 
         <!-- Settings -->
         <string name="setting_notification_header">Notification setting</string>
@@ -73,7 +73,7 @@
         <string name="tab_report">Report in/out</string>
 
         <!-- Clarify tab name -->
-        <string name="clarify">Clarify</string>
+        <string name="clarify_button">Confirm</string>
         <string name="clarify_history">History</string>
         <string name="clarify_recieve">Recieve</string>
 
@@ -319,7 +319,7 @@
         <string name="spinner_year">Year</string>
         <string name="spinner_nationality">Please select nationality</string>
 
-        <string name="clarify_title">Clarify</string>
+        <string name="clarify_title">Hold</string>
         <string name="clarify_button_left">Order list</string>
         <string name="clarify_button_right">Next</string>
         
@@ -353,9 +353,9 @@
         <string name="signup_input_title4">Address</string>
 
         <string name="prefix">Prefix</string>
-        <string name="prefix_name_male">Mr.</string>
-        <string name="prefix_name_female_single">Ms.</string>
-        <string name="prefix_name_female_married">Mrs.</string>
+        <string name="prefix_name_male">Mr</string>
+        <string name="prefix_name_female_single">Ms</string>
+        <string name="prefix_name_female_married">Mrs</string>
         <string name="prefix_name_other">Other</string>
 
         <string name="sponsors_id_empty">Please enter sponsors id</string>
@@ -375,6 +375,9 @@
 
         <string name="search_member_id">Search</string>
         <string name="choose_bill">Select bill</string>
+
+        <string name="line_id">Line id</string>
+        <string name="facebook">Facebook</string>
 
         <string name="eula_string">COPYRIGHTS:
 

@@ -1,5 +1,7 @@
 package th.co.omc.memberdemo.utils;
 
+import android.util.Log;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -93,8 +95,9 @@ public class CustomizeDateTime {
 
 
         int year = Integer.parseInt(yearFormat.format(date)) + 543;
-        Log.e("format year: ", ""+ year);
+
         String y = "" + year;*/
+        Log.e("format year: ", str + ", "+ fullyear);
         return yearFormat.format(date);
     }
 }
