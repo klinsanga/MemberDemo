@@ -55,10 +55,8 @@ public class ParseType {
                                 HashMap<String,String> hm = new HashMap<String,String>();
                                 jsonObject = new JSONObject(response);
                                 Iterator iterator = jsonObject.keys();
-                                modelTypeWithKey = new ModelTypeWithKey(
-                                        "0"
-                                );
-                                modelTypeWithKeyList.add(modelTypeWithKey);
+                                ModelTypeWithKey modelTypeWithKey0 = new ModelTypeWithKey( "0" );
+                                modelTypeWithKeyList.add(modelTypeWithKey0);
                                 while (iterator.hasNext()) {
                                     String key = (String) iterator.next();
                                     if (key.equals("billtype")) {
@@ -69,22 +67,23 @@ public class ParseType {
                                         String q = obj.getString("Q");
                                         String h = obj.getString("H");
 
+                                        Model model0 = new Model();
+                                        model0.setItemName("Please select order type");
+                                        OrderModelArrayList.add(model0);
+
                                         for (int i = 0; i < obj.length(); i++) {
                                             hm.put(obj.names().getString(i), obj.getString(obj.names().getString(i)));
+
                                         }
 
                                         Map<String, String> treeMap = new TreeMap<String, String>(hm);
                                         for (String str : treeMap.keySet()) {
                                             Log.e("sort array", str);
-                                            modelTypeWithKey = new ModelTypeWithKey(
-                                                    str
-                                            );
+                                            modelTypeWithKey = new ModelTypeWithKey( str );
                                             modelTypeWithKeyList.add(modelTypeWithKey);
                                         }
 
-                                        Model model = new Model();
-                                        model.setItemName("Please select order type");
-                                        OrderModelArrayList.add(model);
+
                                         Model modelA = new Model();
                                         modelA.setItemName(a);
                                         OrderModelArrayList.add(modelA);
@@ -103,28 +102,34 @@ public class ParseType {
                                         callback.onParseOrderTypeCallbackSuccess(OrderModelArrayList, modelTypeWithKeyList);
                                     } else {
                                         obj = jsonObject.getJSONObject("payment");
-                                        String a = obj.getString("1");
+                                        /*String a = obj.getString("1");
                                         String b = obj.getString("2");
                                         String c = obj.getString("3");
                                         String q = obj.getString("4");
-                                        String h = obj.getString("5");
+                                        String h = obj.getString("5");*/
+
+                                        Model model0 = new Model();
+                                        model0.setItemName("Please select pay type");
+                                        OrderModelArrayList.add(model0);
 
                                         for (int i = 0; i < obj.length(); i++) {
                                             hm.put(obj.names().getString(i), obj.getString(obj.names().getString(i)));
+                                            Model model = new Model();
+                                            model.setItemName(obj.getString(obj.names().getString(i)));
+                                            OrderModelArrayList.add(model);
                                         }
 
                                         Map<String, String> treeMap = new TreeMap<String, String>(hm);
                                         for (String str : treeMap.keySet()) {
                                             Log.e("sort array", str);
-                                            modelTypeWithKey = new ModelTypeWithKey(
-                                                    str
-                                            );
+                                            modelTypeWithKey = new ModelTypeWithKey( str );
                                             modelTypeWithKeyList.add(modelTypeWithKey);
                                         }
 
-                                        Model model = new Model();
+                                        /*Model model = new Model();
                                         model.setItemName("Please select pay type");
                                         OrderModelArrayList.add(model);
+
                                         Model modelA = new Model();
                                         modelA.setItemName(a);
                                         OrderModelArrayList.add(modelA);
@@ -139,7 +144,7 @@ public class ParseType {
                                         OrderModelArrayList.add(modelQ);
                                         Model modelH = new Model();
                                         modelH.setItemName(h);
-                                        OrderModelArrayList.add(modelH);
+                                        OrderModelArrayList.add(modelH);*/
                                         callback.onParsePaymentTypeCallbackSuccess(OrderModelArrayList, modelTypeWithKeyList);
                                     }
                                 }

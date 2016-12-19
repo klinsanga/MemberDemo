@@ -53,16 +53,10 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void languageEnglish() {
-        /*Configuration configEN = new Configuration();
-        configEN.locale = Locale.ENGLISH;
-        getResources().updateConfiguration(configEN, null);*/
         LanguageHelper.changeLocale(this.getResources(), "en");
     }
 
     private void languageThai() {
-        /*Configuration configTH = new Configuration();
-        configTH.locale = new Locale("th_TH");
-        getResources().updateConfiguration(configTH, null);*/
         LanguageHelper.changeLocale(this.getResources(), "th");
     }
 

@@ -62,9 +62,6 @@ public class MainActivity extends AppCompatActivity {
         initWidget();
         initCustomDrawer();
         isLogin();
-        if (savedInstanceState == null) {
-            loadHomePage();
-        }
     }
 
     private void loadHomePage() {
@@ -83,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
             if (!MyApplication.getInstance().getPrefManager().getUserLoginStatus()) {
                 Intent intent = new Intent(this, SigninActivity.class);
                 startActivityForResult(intent, REQUEST_LOGIN);
+            } else {
+                loadHomePage();
             }
         } catch (Exception ex) {
             Log.e(TAG, "No user log in. Error : " + ex.toString());
@@ -255,6 +254,10 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_LOGOUT) {
             if (resultCode == RESULT_OK) {
                 reload();
+            }
+        } else if (requestCode == REQUEST_LOGIN) {
+            if (resultCode == RESULT_OK) {
+                loadHomePage();
             }
         }
 

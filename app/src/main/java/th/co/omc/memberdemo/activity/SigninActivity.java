@@ -180,7 +180,6 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void onLoginSuccess() {
-        Log.e(TAG, new Date().getTime() + "");
         MyApplication.getInstance().getPrefManager().setUserLoginStatus(username, new Date().getTime(), true);
         setResult(RESULT_OK, null);
         finish();
@@ -189,7 +188,6 @@ public class SigninActivity extends AppCompatActivity implements View.OnClickLis
     public void onLoginFailed(String _errMessage) {
         editText_username.setError(_errMessage);
         editText_password.setError(_errMessage);
-        //Toast.makeText(getBaseContext(), "Login failed", Toast.LENGTH_LONG).show();
     }
 
     public boolean validate(String username, String password) {

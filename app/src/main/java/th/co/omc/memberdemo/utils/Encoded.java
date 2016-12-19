@@ -1,7 +1,5 @@
 package th.co.omc.memberdemo.utils;
 
-import android.util.Log;
-
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -22,7 +20,6 @@ public class Encoded {
             StringBuffer hexString = new StringBuffer();
             for (int i=0; i<messageDigest.length; i++)
                 hexString.append(Integer.toHexString(0xFF & messageDigest[i]));
-            Log.e("md5", hexString.toString());
             return hexString.toString();
 
         } catch (NoSuchAlgorithmException e) {

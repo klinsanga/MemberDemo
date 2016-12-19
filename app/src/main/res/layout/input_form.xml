@@ -184,7 +184,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:paddingRight="60dp"
+                        android:paddingRight="50dp"
                         android:gravity="center"
                         android:text="@string/form_radio_send_product"
                         style="@style/radionbutton"/>
@@ -194,7 +194,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:paddingRight="60dp"
+                        android:paddingRight="50dp"
                         android:gravity="center"
                         style="@style/radionbutton"
                         android:text="@string/form_radio_self_recieve"/>
@@ -203,7 +203,7 @@
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_marginRight="30dp"
+                    android:layout_marginRight="25dp"
                     android:layout_weight="0.5"
                     android:layout_height="wrap_content">
 

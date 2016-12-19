@@ -9,14 +9,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <!--
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-    -->
     <application
         android:name=".utils.MyApplication"
         android:allowBackup="true"
@@ -101,7 +93,9 @@
             android:name=".activity.EditInformationActivity"
             android:configChanges="orientation|locale"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.billhold.ClarifyItemListActivity"></activity>
+        <activity android:name=".activity.billhold.ClarifyItemListActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

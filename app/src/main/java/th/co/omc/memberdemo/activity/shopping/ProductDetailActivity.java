@@ -70,7 +70,6 @@ public class ProductDetailActivity extends AppCompatActivity implements View.OnC
     }
 
     private void initWidget() {
-        testCart.clear();
         toolbar.setTitle("");
         toolbar.setTitleTextColor(this.getResources().getColor(R.color.White));
         ImageView imageView = (ImageView) toolbar.findViewById(R.id.icon);

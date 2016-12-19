@@ -193,17 +193,6 @@ public class MyPreferenceManager {
         editor.commit();
     }
 
-    /*public void storeImageProfile(String id, String base64) {
-        KEY_IMAGE_PROFILE = id;
-        editor.putString(KEY_IMAGE_PROFILE, base64);
-        editor.commit();
-    }
-
-    public String getImageProfile(String id) {
-        KEY_IMAGE_PROFILE = id;
-        return pref.getString(KEY_IMAGE_PROFILE, null);
-    }*/
-
     public void storeSendingAddress(AddressModel addressModel) {
         editor.putString(KEY_SENDING_MCODE, addressModel.getMemberCode());
         editor.putString(KEY_SENDING_NAME, addressModel.getMemberName());

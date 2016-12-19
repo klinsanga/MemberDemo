@@ -612,9 +612,7 @@ public class InputMethodActivity extends AppCompatActivity implements View.OnCli
 
             for (int i = 0; i < OrderArrayList.size(); i++) {
                 if (i > 0) {
-                    typeModel = new TypeModel(
-                            OrderArrayList.get(i).getItemName()
-                    );
+                    typeModel = new TypeModel( OrderArrayList.get(i).getItemName() );
                     orderTypeModel.add(typeModel);
                 }
             }
@@ -642,9 +640,7 @@ public class InputMethodActivity extends AppCompatActivity implements View.OnCli
 
             for (int i = 0; i < PayModelArrayList.size(); i++) {
                 if (i > 0) {
-                    typeModel = new TypeModel(
-                            PayModelArrayList.get(i).getItemName()
-                    );
+                    typeModel = new TypeModel( PayModelArrayList.get(i).getItemName() );
                     payTypeModel.add(typeModel);
                 }
             }

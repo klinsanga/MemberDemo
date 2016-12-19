@@ -23,9 +23,7 @@ public class ClarifyFragmentAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        /*if(position == 0) {
-            return new ClarifyFragment();
-        }else*/ if(position == 0) {
+        if(position == 0) {
             return new ClarifyHistoryFragment();
         }else if(position == 1) {
             return new ClarifyRecieveFragment();
