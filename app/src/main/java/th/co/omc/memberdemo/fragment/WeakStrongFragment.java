@@ -45,7 +45,6 @@ public class WeakStrongFragment extends Fragment implements View.OnClickListener
     private String parameterMonth;
 
     WeakstrongAdapter adapter;
-    WeakstrongItem weakstrongItem;
     List<WeakstrongItem> weakstrongItemList = new ArrayList<WeakstrongItem>();
 
     @Bind(R.id.weakstrong_btn_next) LinearLayout next;

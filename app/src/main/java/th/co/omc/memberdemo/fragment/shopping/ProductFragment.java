@@ -72,8 +72,6 @@ public class ProductFragment extends Fragment implements ProductAdapter.ClickLis
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_product, container, false);
         ButterKnife.bind(this, view);
-        //setHasOptionsMenu(true);
-
         initWidget();
         return view;
     }

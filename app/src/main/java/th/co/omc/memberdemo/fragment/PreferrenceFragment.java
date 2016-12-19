@@ -125,18 +125,12 @@ public class PreferrenceFragment extends Fragment implements View.OnClickListene
     }
 
     private void languageEnglish() {
-        /*Configuration configEN = new Configuration();
-        configEN.locale = Locale.ENGLISH;
-        getResources().updateConfiguration(configEN, getResources().getDisplayMetrics());*/
         LanguageHelper.changeLocale(this.getResources(), "en");
         MyApplication.getInstance().getPrefManager().setApplicationLanguage("EN");
         setTextToView();
     }
 
     private void languageThai() {
-        /*Configuration configTH = new Configuration();
-        configTH.locale = new Locale("th_TH");
-        getResources().updateConfiguration(configTH, getResources().getDisplayMetrics());*/
         LanguageHelper.changeLocale(this.getResources(), "th");
         MyApplication.getInstance().getPrefManager().setApplicationLanguage("TH");
         setTextToView();

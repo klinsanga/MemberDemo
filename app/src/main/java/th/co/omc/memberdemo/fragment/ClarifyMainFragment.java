@@ -33,7 +33,6 @@ public class ClarifyMainFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_clarify_main, container, false);
         ButterKnife.bind(this, view);
-        //tabLayout.addTab(tabLayout.newTab().setText(R.string.clarify));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.clarify_history));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.clarify_recieve));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);

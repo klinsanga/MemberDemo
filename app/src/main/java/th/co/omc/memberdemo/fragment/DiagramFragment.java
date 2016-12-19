@@ -41,7 +41,6 @@ public class DiagramFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_diagram, container, false);
         ButterKnife.bind(this, view);
-
         tabLayout.addTab(tabLayout.newTab().setText(R.string.diagram_tab1));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.diagram_tab2));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.diagram_tab3));

@@ -22,7 +22,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import th.co.omc.memberdemo.R;
 import th.co.omc.memberdemo.activity.EditInformationActivity;
 import th.co.omc.memberdemo.loadImage.ImageLoader;
-import th.co.omc.memberdemo.model.ItemMember;
 import th.co.omc.memberdemo.utils.ActivityResultBus;
 import th.co.omc.memberdemo.utils.ActivityResultEvent;
 import th.co.omc.memberdemo.utils.AnimateButton;
@@ -38,7 +37,6 @@ public class MemberInfoFragment extends Fragment implements View.OnClickListener
     public static final String TAG = MemberInfoFragment.class.getSimpleName();
     private static final int REQUEST_EDIT = 99;
 
-    ItemMember itemMember;
     Typeface thin, bold;
     CustomizeDateTime customizeDateTime;
     ImageLoader imageLoader;
@@ -67,7 +65,6 @@ public class MemberInfoFragment extends Fragment implements View.OnClickListener
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_member_info, container, false);
         ButterKnife.bind(this, view);
-        //imgLoader = new ImageLoader(getActivity());
 
         //----- load fonts from assets folder -----//
         thin = Typeface.createFromAsset(getActivity().getAssets(), "fonts/helvethaica_ext.ttf");

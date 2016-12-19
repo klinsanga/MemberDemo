@@ -289,26 +289,6 @@ public class InputFragment extends Fragment implements View.OnClickListener {
             zip = registerZip.getText().toString();
             bdate = y + "-" + m + "-" +d;
 
-            /*Log.e("Sponsors id", spid);
-            Log.e("Sponsors name", spname);
-            Log.e("Upline id", upid);
-            Log.e("Upline name", upname);
-            Log.e("Side id", sideid);
-            Log.e("Side name", sidename);
-            Log.e("Prefix", prefixname + ", Prefix id : "+ prefixid);
-            Log.e("Name", name);
-            Log.e("Gender", gendername + ", Gender id : " + gender);
-            Log.e("Birth date", bdate);
-            Log.e("Nationality", nationality);
-            Log.e("Id card", id_card);
-            Log.e("Mobile", mobile);
-            Log.e("Email", email);
-            Log.e("Address", address);
-            Log.e("Province name", provincename);
-            Log.e("District name", districtname);
-            Log.e("Sub-District name", subdistrictname);
-            Log.e("Zip", zip);*/
-
             signModel = new SignupDataModel(
                     spid,
                     spname,

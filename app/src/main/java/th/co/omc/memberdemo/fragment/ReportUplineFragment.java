@@ -74,7 +74,6 @@ public class ReportUplineFragment extends Fragment implements ViewAdapter.ClickL
     public void onStart() {
         super.onStart();
         Typeface typeface = Typeface.createFromAsset(getContext().getAssets(), "fonts/helvethaica_ext.ttf");
-        //filter.setTypeface(typeface);
     }
 
     @Override
@@ -97,10 +96,6 @@ public class ReportUplineFragment extends Fragment implements ViewAdapter.ClickL
 
     @Override
     public void itemClicked(View view, int position) {
-        /*LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.layout_expand);
-        ImageView imageView = (ImageView) view.findViewById(R.id.item_icon);
-        final int originalHeight = linearLayout.getHeight();
-        animationDown(linearLayout, 108, imageView);*/
     }
 
     public class DoParseJson extends AsyncTask<String, Void, String> {

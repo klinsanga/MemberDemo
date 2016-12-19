@@ -33,7 +33,6 @@ public class EwalletFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ewallet, container, false);
         ButterKnife.bind(this, view);
-
         tab.addTab(tab.newTab().setText(R.string.tab_topup));
         tab.addTab(tab.newTab().setText(R.string.tab_report));
         tab.setTabGravity(TabLayout.GRAVITY_FILL);
