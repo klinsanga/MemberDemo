@@ -335,7 +335,7 @@
         <string name="signup_input_hint_upline_name">Upline name</string>
 
         <string name="signup_button_save">Save</string>
-        <string name="signup_button_clear">Cear</string>
+        <string name="signup_button_clear">Clear</string>
         
         <string name="signup_input_hint_register_name">Name</string>
         <string name="signup_input_hint_register_gender_male">Male</string>
