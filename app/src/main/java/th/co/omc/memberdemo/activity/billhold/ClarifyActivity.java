@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,14 +51,9 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
     List<ClarifyItem> clarifyItemList = new ArrayList<ClarifyItem>();
 
     @Bind(R.id.toolbar) Toolbar toolbar;
-    @Bind(R.id.clarify_hold_btn_next) LinearLayout next;
-    @Bind(R.id.clarify_hold_btn_previous) LinearLayout previous;
-    @Bind(R.id.clarify_hold_text_month) CustomTextview textviewMonth;
     @Bind(R.id.recyclerview) RecyclerView recyclerView;
     @Bind(R.id.Clarify_not_found) RelativeLayout itemNotFound;
     @Bind(R.id.ClarifyProgressBarLayout) RelativeLayout progressBar;
-    /*@Bind(R.id.button_left) CustomTextview buttonLeft;
-    @Bind(R.id.button_right) CustomTextview buttonRight;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +61,7 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_clarify);
         ButterKnife.bind(this);
         initWidget();
-        initCalendar();
+        prepareItem();
     }
 
     private void initWidget() {
@@ -89,11 +85,6 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        //buttonLeft.setOnClickListener(this);
-        //buttonRight.setOnClickListener(this);
-        next.setOnClickListener(this);
-        previous.setOnClickListener(this);
-
         cart.clear();
     }
 
@@ -102,10 +93,10 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(ClarifyActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
-        adapter = new ClarifyAdapter(ClarifyActivity.this, clarifyItemList);
+        /*adapter = new ClarifyAdapter(ClarifyActivity.this, clarifyItemList);
         recyclerView.setAdapter(adapter);
         adapter.setClickListener(ClarifyActivity.this);
-        adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();*/
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             new DoParseTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, EndPoints.API_CLARIFY);
         } else {
@@ -141,7 +132,7 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
         return super.onOptionsItemSelected(item);
     }
 
-    private void initCalendar() {
+    /*private void initCalendar() {
         _calendar = Calendar.getInstance();
         month = _calendar.get(Calendar.MONTH) + 1;
         year = _calendar.get(Calendar.YEAR);
@@ -188,17 +179,11 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
             parameterMonth = year + "-" + month;
         }
         prepareItem();
-    }
+    }*/
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            /*case R.id.button_left :
-                buttonLeft.startAnimation(new AnimateButton().animbutton());
-                break;
-            case R.id.button_right :
-                buttonRight.startAnimation(new AnimateButton().animbutton());
-                break;*/
+        /*switch (view.getId()) {
             case R.id.clarify_hold_btn_next :
                 next.startAnimation(new AnimateButton().animbutton());
                 nextMonth();
@@ -208,12 +193,13 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
                 previousMonth();
                 break;
             default: break;
-        }
+        }*/
     }
 
     @Override
     public void itemClicked(View view, int position) {
         ClarifyItem item = clarifyItemList.get(position);
+        Log.e("pass bid", item.getBid().toString());
         Intent intent = new Intent(ClarifyActivity.this, ClarifyItemListActivity.class);
         intent.putExtra("bid", item.getBid().toString());
         intent.putExtra("billnumber", item.getNumber().toString());
@@ -232,7 +218,7 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
         @Override
         protected Void doInBackground(String... strings) {
             for (String url : strings) {
-                parseClarify = new ParseClarify(url, parameterMonth);
+                parseClarify = new ParseClarify(url, "");
             }
             parseClarify.postClarifyRequest(this);
             return null;
@@ -257,6 +243,7 @@ public class ClarifyActivity extends AppCompatActivity implements View.OnClickLi
             recyclerView.setAdapter(adapter);
             adapter.setClickListener(ClarifyActivity.this);
             adapter.notifyDataSetChanged();
+
             progressBar.setVisibility(View.GONE);
             itemNotFound.setVisibility(View.GONE);
         }

@@ -47,12 +47,14 @@ public class SendHoldToServer {
 
                     @Override
                     public void onResponse(String response) {
-                        Log.e(TAG, "response data server : " + response);
+                        Log.e(TAG, "response data hold server : " + response);
                         JSONObject obj;
                         try {
                             obj = new JSONObject(response);
                             if (obj.getString("STATUS").equals("SUCCESS")) {
                                 callback.onsendHoldCallbackSuccess(obj.getString("MESSAGE"));
+                            } else {
+                                callback.onFailed(obj.getString("MESSAGE"));
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

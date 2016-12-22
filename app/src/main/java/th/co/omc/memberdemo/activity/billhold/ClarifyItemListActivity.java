@@ -264,7 +264,7 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
 
         @Override
         public void onFailed(String result) {
-
+            alertFail(result);
         }
 
         @Override
@@ -339,7 +339,7 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
                 new DoParseHold().execute(EndPoints.API_CART_HOLD);
             }
         } else {
-            alertFail();
+            alertFail("PLEASE SELECT MEMBER ID.");
         }
     }
 
@@ -366,10 +366,12 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
         }.start();
     }
 
-    private void alertFail() {
+    private void alertFail(String str) {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         final LayoutInflater inflater = this.getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.custom_alert_failed, null);
+        CustomTextview msg = (CustomTextview) dialogView.findViewById(R.id.msg_fail);
+        msg.setText(str);
         dialogBuilder.setView(dialogView);
         final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.show();
@@ -411,7 +413,7 @@ public class ClarifyItemListActivity extends AppCompatActivity implements View.O
 
         @Override
         public void onFailed(String result) {
-            alertFail();
+            alertFail(result);
         }
 
         @Override
